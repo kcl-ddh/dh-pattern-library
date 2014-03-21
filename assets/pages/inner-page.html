@@ -22,12 +22,12 @@
               <a href="#" class="button secondary radius"><i class="fa fa-user">&nbsp;</i> Login</a>
             </li>
             <li>
-              <div class="row collapse">
+              <div class="row collapse search-box">
                 <div class="large-8 small-9 columns">
-                  <input type="text" placeholder="Find Stuff">
+                  <input type="text" placeholder="Find stuff">
                 </div>
                 <div class="large-4 small-3 columns">
-                  <a href="#" class="button"><i class="fa fa-search">&nbsp;</i></a>
+                  <a href="#" class="button expand"><i class="fa fa-search">&nbsp;</i></a>
                 </div>
               </div>
             </li>
@@ -38,12 +38,12 @@
           <p><a href="#" data-dropdown="drop-search-small"><i class="fa fa-search">&nbsp;</i></a></p>
           <div id="drop-search-small" data-dropdown-content class="f-dropdown content">
             <li class="has-form">
-              <div class="row collapse">
+              <div class="row collapse search-box">
                 <div class="large-8 small-9 columns">
-                  <input type="text" placeholder="Find Stuff">
+                  <input type="text" placeholder="Find stuff">
                 </div>
                 <div class="large-4 small-3 columns">
-                  <a href="#" class="alert button expand"><i class="fa fa-search">&nbsp;</i></a>
+                  <a href="#" class="button expand"><i class="fa fa-search">&nbsp;</i></a>
                 </div>
               </div>
             </li>
@@ -68,12 +68,10 @@
             <li><a href="../index.html">Home</a></li>
             <li class="active"><a href="#">Inner page</a></li>
             <li><a href="#">Blog</a></li>
-            <li><a href="#">Faceted browsing</a></li>
+            <li><a href="faceted-browsing.html">Faceted browsing</a></li>
             <li><a href="#">Search results</a></li>
           </ul>
         </section>
-
-        </ul>
       </nav>
     </div>
 
@@ -81,29 +79,37 @@
 
     <div class="row">
       <div class="large-12 columns">
-        <h1>Inner Page</h1>
+        <h1>Inner page</h1>
+        <h2>Expandable list</h2>
+        <section class="expandable-list" data-expandable-group-mmember="group-1" data-section="expandable">
+          <div class="list-item">
+            <div class="list-header">
+              <h4><a href="#" class="ctrl expand"><i class="fa fa-caret-right"></i><span class="header">List header 1</span></a></h4>
+            </div>
+            <div class="list-content">
+              <p>Content of list item 1. Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          
+          <div class="list-item">
+            <div class="list-header">
+              <h4><a href="#" class="ctrl expand"><i class="fa fa-caret-right"></i><span class="header">List header 2</span></a></h4>
+            </div>
+            <div class="list-content">
+              <p>Content of list item 2. Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </section>
       </div>
-    </div>
-    
-    <div class="row">
-      <div class="large-12 columns">
-              <div class="row collapse">
-                <div class="large-8 small-9 columns">
-                  <input type="text" placeholder="Find Stuff">
-                </div>
-                <div class="large-4 small-3 columns">
-                  <a href="#" class="alert button"><i class="fa fa-search">&nbsp;</i></a>
-                </div>
-              </div>
-      </div>
-    </div>
+  </div>
 
     <!-- Footer -->
 
     <footer>
       <div class="row">
         <div class="large-12 columns">
-          <p>This is a footer</p>
+          <h3>This is a footer</h3>
+          <p>King's DDH logo + link to department</p>
         </div>
       </div>
     </footer>

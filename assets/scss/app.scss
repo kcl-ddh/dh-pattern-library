@@ -7,6 +7,11 @@ header, footer {
 	background: #d8d8d8;
 }
 
+.clear {
+	clear: both;
+	display: block;
+}
+
 .navigation {
 	margin-bottom: 1em;
 }
@@ -30,6 +35,15 @@ header, footer {
     background: #2ba6cb;
     padding: 30px 40px;
 }
+
+@import "extras","animations";  
+
+/* Expandable lists */
+@import "expandable-list";
+
+/* Faceted navigation */
+@import "faceted-navigation";
+
 
 // Or selectively include components
 // @import
