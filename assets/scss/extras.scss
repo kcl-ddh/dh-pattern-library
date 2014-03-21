@@ -1,0 +1,3332 @@
+/* Typography */
+/*!
+ *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fontawesome-webfont.eot?v=4.0.3");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.0.3") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.0.3") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.0.3") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 16, ../scss/extras.scss */
+.fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* makes the font 33% larger relative to the icon container */
+/* line 26, ../scss/extras.scss */
+.fa-lg {
+  font-size: 1.3333333333333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+
+/* line 31, ../scss/extras.scss */
+.fa-2x {
+  font-size: 2em;
+}
+
+/* line 34, ../scss/extras.scss */
+.fa-3x {
+  font-size: 3em;
+}
+
+/* line 37, ../scss/extras.scss */
+.fa-4x {
+  font-size: 4em;
+}
+
+/* line 40, ../scss/extras.scss */
+.fa-5x {
+  font-size: 5em;
+}
+
+/* line 43, ../scss/extras.scss */
+.fa-fw {
+  width: 1.2857142857142858em;
+  text-align: center;
+}
+
+/* line 47, ../scss/extras.scss */
+.fa-ul {
+  padding-left: 0;
+  margin-left: 2.142857142857143em;
+  list-style-type: none;
+}
+
+/* line 52, ../scss/extras.scss */
+.fa-ul > li {
+  position: relative;
+}
+
+/* line 55, ../scss/extras.scss */
+.fa-li {
+  position: absolute;
+  left: -2.142857142857143em;
+  width: 2.142857142857143em;
+  top: 0.14285714285714285em;
+  text-align: center;
+}
+
+/* line 62, ../scss/extras.scss */
+.fa-li.fa-lg {
+  left: -1.8571428571428572em;
+}
+
+/* line 65, ../scss/extras.scss */
+.fa-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eeeeee;
+  border-radius: .1em;
+}
+
+/* line 70, ../scss/extras.scss */
+.pull-right {
+  float: right;
+}
+
+/* line 73, ../scss/extras.scss */
+.pull-left {
+  float: left;
+}
+
+/* line 76, ../scss/extras.scss */
+.fa.pull-left {
+  margin-right: .3em;
+}
+
+/* line 79, ../scss/extras.scss */
+.fa.pull-right {
+  margin-left: .3em;
+}
+
+/* line 82, ../scss/extras.scss */
+.fa-spin {
+  -webkit-animation: spin 2s infinite linear;
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+}
+
+@-moz-keyframes spin {
+  /* line 89, ../scss/extras.scss */
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+
+  /* line 92, ../scss/extras.scss */
+  100% {
+    -moz-transform: rotate(359deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  /* line 97, ../scss/extras.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  /* line 100, ../scss/extras.scss */
+  100% {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+@-o-keyframes spin {
+  /* line 105, ../scss/extras.scss */
+  0% {
+    -o-transform: rotate(0deg);
+  }
+
+  /* line 108, ../scss/extras.scss */
+  100% {
+    -o-transform: rotate(359deg);
+  }
+}
+
+@-ms-keyframes spin {
+  /* line 113, ../scss/extras.scss */
+  0% {
+    -ms-transform: rotate(0deg);
+  }
+
+  /* line 116, ../scss/extras.scss */
+  100% {
+    -ms-transform: rotate(359deg);
+  }
+}
+
+@keyframes spin {
+  /* line 121, ../scss/extras.scss */
+  0% {
+    transform: rotate(0deg);
+  }
+
+  /* line 124, ../scss/extras.scss */
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+/* line 128, ../scss/extras.scss */
+.fa-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 136, ../scss/extras.scss */
+.fa-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 144, ../scss/extras.scss */
+.fa-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+/* line 152, ../scss/extras.scss */
+.fa-flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+  -webkit-transform: scale(-1, 1);
+  -moz-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+/* line 160, ../scss/extras.scss */
+.fa-flip-vertical {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+  -webkit-transform: scale(1, -1);
+  -moz-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+
+/* line 168, ../scss/extras.scss */
+.fa-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+
+/* line 177, ../scss/extras.scss */
+.fa-stack-1x,
+.fa-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 183, ../scss/extras.scss */
+.fa-stack-1x {
+  line-height: inherit;
+}
+
+/* line 186, ../scss/extras.scss */
+.fa-stack-2x {
+  font-size: 2em;
+}
+
+/* line 189, ../scss/extras.scss */
+.fa-inverse {
+  color: #ffffff;
+}
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+/* line 194, ../scss/extras.scss */
+.fa-glass:before {
+  content: "\f000";
+}
+
+/* line 197, ../scss/extras.scss */
+.fa-music:before {
+  content: "\f001";
+}
+
+/* line 200, ../scss/extras.scss */
+.fa-search:before {
+  content: "\f002";
+}
+
+/* line 203, ../scss/extras.scss */
+.fa-envelope-o:before {
+  content: "\f003";
+}
+
+/* line 206, ../scss/extras.scss */
+.fa-heart:before {
+  content: "\f004";
+}
+
+/* line 209, ../scss/extras.scss */
+.fa-star:before {
+  content: "\f005";
+}
+
+/* line 212, ../scss/extras.scss */
+.fa-star-o:before {
+  content: "\f006";
+}
+
+/* line 215, ../scss/extras.scss */
+.fa-user:before {
+  content: "\f007";
+}
+
+/* line 218, ../scss/extras.scss */
+.fa-film:before {
+  content: "\f008";
+}
+
+/* line 221, ../scss/extras.scss */
+.fa-th-large:before {
+  content: "\f009";
+}
+
+/* line 224, ../scss/extras.scss */
+.fa-th:before {
+  content: "\f00a";
+}
+
+/* line 227, ../scss/extras.scss */
+.fa-th-list:before {
+  content: "\f00b";
+}
+
+/* line 230, ../scss/extras.scss */
+.fa-check:before {
+  content: "\f00c";
+}
+
+/* line 233, ../scss/extras.scss */
+.fa-times:before {
+  content: "\f00d";
+}
+
+/* line 236, ../scss/extras.scss */
+.fa-search-plus:before {
+  content: "\f00e";
+}
+
+/* line 239, ../scss/extras.scss */
+.fa-search-minus:before {
+  content: "\f010";
+}
+
+/* line 242, ../scss/extras.scss */
+.fa-power-off:before {
+  content: "\f011";
+}
+
+/* line 245, ../scss/extras.scss */
+.fa-signal:before {
+  content: "\f012";
+}
+
+/* line 249, ../scss/extras.scss */
+.fa-gear:before,
+.fa-cog:before {
+  content: "\f013";
+}
+
+/* line 252, ../scss/extras.scss */
+.fa-trash-o:before {
+  content: "\f014";
+}
+
+/* line 255, ../scss/extras.scss */
+.fa-home:before {
+  content: "\f015";
+}
+
+/* line 258, ../scss/extras.scss */
+.fa-file-o:before {
+  content: "\f016";
+}
+
+/* line 261, ../scss/extras.scss */
+.fa-clock-o:before {
+  content: "\f017";
+}
+
+/* line 264, ../scss/extras.scss */
+.fa-road:before {
+  content: "\f018";
+}
+
+/* line 267, ../scss/extras.scss */
+.fa-download:before {
+  content: "\f019";
+}
+
+/* line 270, ../scss/extras.scss */
+.fa-arrow-circle-o-down:before {
+  content: "\f01a";
+}
+
+/* line 273, ../scss/extras.scss */
+.fa-arrow-circle-o-up:before {
+  content: "\f01b";
+}
+
+/* line 276, ../scss/extras.scss */
+.fa-inbox:before {
+  content: "\f01c";
+}
+
+/* line 279, ../scss/extras.scss */
+.fa-play-circle-o:before {
+  content: "\f01d";
+}
+
+/* line 283, ../scss/extras.scss */
+.fa-rotate-right:before,
+.fa-repeat:before {
+  content: "\f01e";
+}
+
+/* line 286, ../scss/extras.scss */
+.fa-refresh:before {
+  content: "\f021";
+}
+
+/* line 289, ../scss/extras.scss */
+.fa-list-alt:before {
+  content: "\f022";
+}
+
+/* line 292, ../scss/extras.scss */
+.fa-lock:before {
+  content: "\f023";
+}
+
+/* line 295, ../scss/extras.scss */
+.fa-flag:before {
+  content: "\f024";
+}
+
+/* line 298, ../scss/extras.scss */
+.fa-headphones:before {
+  content: "\f025";
+}
+
+/* line 301, ../scss/extras.scss */
+.fa-volume-off:before {
+  content: "\f026";
+}
+
+/* line 304, ../scss/extras.scss */
+.fa-volume-down:before {
+  content: "\f027";
+}
+
+/* line 307, ../scss/extras.scss */
+.fa-volume-up:before {
+  content: "\f028";
+}
+
+/* line 310, ../scss/extras.scss */
+.fa-qrcode:before {
+  content: "\f029";
+}
+
+/* line 313, ../scss/extras.scss */
+.fa-barcode:before {
+  content: "\f02a";
+}
+
+/* line 316, ../scss/extras.scss */
+.fa-tag:before {
+  content: "\f02b";
+}
+
+/* line 319, ../scss/extras.scss */
+.fa-tags:before {
+  content: "\f02c";
+}
+
+/* line 322, ../scss/extras.scss */
+.fa-book:before {
+  content: "\f02d";
+}
+
+/* line 325, ../scss/extras.scss */
+.fa-bookmark:before {
+  content: "\f02e";
+}
+
+/* line 328, ../scss/extras.scss */
+.fa-print:before {
+  content: "\f02f";
+}
+
+/* line 331, ../scss/extras.scss */
+.fa-camera:before {
+  content: "\f030";
+}
+
+/* line 334, ../scss/extras.scss */
+.fa-font:before {
+  content: "\f031";
+}
+
+/* line 337, ../scss/extras.scss */
+.fa-bold:before {
+  content: "\f032";
+}
+
+/* line 340, ../scss/extras.scss */
+.fa-italic:before {
+  content: "\f033";
+}
+
+/* line 343, ../scss/extras.scss */
+.fa-text-height:before {
+  content: "\f034";
+}
+
+/* line 346, ../scss/extras.scss */
+.fa-text-width:before {
+  content: "\f035";
+}
+
+/* line 349, ../scss/extras.scss */
+.fa-align-left:before {
+  content: "\f036";
+}
+
+/* line 352, ../scss/extras.scss */
+.fa-align-center:before {
+  content: "\f037";
+}
+
+/* line 355, ../scss/extras.scss */
+.fa-align-right:before {
+  content: "\f038";
+}
+
+/* line 358, ../scss/extras.scss */
+.fa-align-justify:before {
+  content: "\f039";
+}
+
+/* line 361, ../scss/extras.scss */
+.fa-list:before {
+  content: "\f03a";
+}
+
+/* line 365, ../scss/extras.scss */
+.fa-dedent:before,
+.fa-outdent:before {
+  content: "\f03b";
+}
+
+/* line 368, ../scss/extras.scss */
+.fa-indent:before {
+  content: "\f03c";
+}
+
+/* line 371, ../scss/extras.scss */
+.fa-video-camera:before {
+  content: "\f03d";
+}
+
+/* line 374, ../scss/extras.scss */
+.fa-picture-o:before {
+  content: "\f03e";
+}
+
+/* line 377, ../scss/extras.scss */
+.fa-pencil:before {
+  content: "\f040";
+}
+
+/* line 380, ../scss/extras.scss */
+.fa-map-marker:before {
+  content: "\f041";
+}
+
+/* line 383, ../scss/extras.scss */
+.fa-adjust:before {
+  content: "\f042";
+}
+
+/* line 386, ../scss/extras.scss */
+.fa-tint:before {
+  content: "\f043";
+}
+
+/* line 390, ../scss/extras.scss */
+.fa-edit:before,
+.fa-pencil-square-o:before {
+  content: "\f044";
+}
+
+/* line 393, ../scss/extras.scss */
+.fa-share-square-o:before {
+  content: "\f045";
+}
+
+/* line 396, ../scss/extras.scss */
+.fa-check-square-o:before {
+  content: "\f046";
+}
+
+/* line 399, ../scss/extras.scss */
+.fa-arrows:before {
+  content: "\f047";
+}
+
+/* line 402, ../scss/extras.scss */
+.fa-step-backward:before {
+  content: "\f048";
+}
+
+/* line 405, ../scss/extras.scss */
+.fa-fast-backward:before {
+  content: "\f049";
+}
+
+/* line 408, ../scss/extras.scss */
+.fa-backward:before {
+  content: "\f04a";
+}
+
+/* line 411, ../scss/extras.scss */
+.fa-play:before {
+  content: "\f04b";
+}
+
+/* line 414, ../scss/extras.scss */
+.fa-pause:before {
+  content: "\f04c";
+}
+
+/* line 417, ../scss/extras.scss */
+.fa-stop:before {
+  content: "\f04d";
+}
+
+/* line 420, ../scss/extras.scss */
+.fa-forward:before {
+  content: "\f04e";
+}
+
+/* line 423, ../scss/extras.scss */
+.fa-fast-forward:before {
+  content: "\f050";
+}
+
+/* line 426, ../scss/extras.scss */
+.fa-step-forward:before {
+  content: "\f051";
+}
+
+/* line 429, ../scss/extras.scss */
+.fa-eject:before {
+  content: "\f052";
+}
+
+/* line 432, ../scss/extras.scss */
+.fa-chevron-left:before {
+  content: "\f053";
+}
+
+/* line 435, ../scss/extras.scss */
+.fa-chevron-right:before {
+  content: "\f054";
+}
+
+/* line 438, ../scss/extras.scss */
+.fa-plus-circle:before {
+  content: "\f055";
+}
+
+/* line 441, ../scss/extras.scss */
+.fa-minus-circle:before {
+  content: "\f056";
+}
+
+/* line 444, ../scss/extras.scss */
+.fa-times-circle:before {
+  content: "\f057";
+}
+
+/* line 447, ../scss/extras.scss */
+.fa-check-circle:before {
+  content: "\f058";
+}
+
+/* line 450, ../scss/extras.scss */
+.fa-question-circle:before {
+  content: "\f059";
+}
+
+/* line 453, ../scss/extras.scss */
+.fa-info-circle:before {
+  content: "\f05a";
+}
+
+/* line 456, ../scss/extras.scss */
+.fa-crosshairs:before {
+  content: "\f05b";
+}
+
+/* line 459, ../scss/extras.scss */
+.fa-times-circle-o:before {
+  content: "\f05c";
+}
+
+/* line 462, ../scss/extras.scss */
+.fa-check-circle-o:before {
+  content: "\f05d";
+}
+
+/* line 465, ../scss/extras.scss */
+.fa-ban:before {
+  content: "\f05e";
+}
+
+/* line 468, ../scss/extras.scss */
+.fa-arrow-left:before {
+  content: "\f060";
+}
+
+/* line 471, ../scss/extras.scss */
+.fa-arrow-right:before {
+  content: "\f061";
+}
+
+/* line 474, ../scss/extras.scss */
+.fa-arrow-up:before {
+  content: "\f062";
+}
+
+/* line 477, ../scss/extras.scss */
+.fa-arrow-down:before {
+  content: "\f063";
+}
+
+/* line 481, ../scss/extras.scss */
+.fa-mail-forward:before,
+.fa-share:before {
+  content: "\f064";
+}
+
+/* line 484, ../scss/extras.scss */
+.fa-expand:before {
+  content: "\f065";
+}
+
+/* line 487, ../scss/extras.scss */
+.fa-compress:before {
+  content: "\f066";
+}
+
+/* line 490, ../scss/extras.scss */
+.fa-plus:before {
+  content: "\f067";
+}
+
+/* line 493, ../scss/extras.scss */
+.fa-minus:before {
+  content: "\f068";
+}
+
+/* line 496, ../scss/extras.scss */
+.fa-asterisk:before {
+  content: "\f069";
+}
+
+/* line 499, ../scss/extras.scss */
+.fa-exclamation-circle:before {
+  content: "\f06a";
+}
+
+/* line 502, ../scss/extras.scss */
+.fa-gift:before {
+  content: "\f06b";
+}
+
+/* line 505, ../scss/extras.scss */
+.fa-leaf:before {
+  content: "\f06c";
+}
+
+/* line 508, ../scss/extras.scss */
+.fa-fire:before {
+  content: "\f06d";
+}
+
+/* line 511, ../scss/extras.scss */
+.fa-eye:before {
+  content: "\f06e";
+}
+
+/* line 514, ../scss/extras.scss */
+.fa-eye-slash:before {
+  content: "\f070";
+}
+
+/* line 518, ../scss/extras.scss */
+.fa-warning:before,
+.fa-exclamation-triangle:before {
+  content: "\f071";
+}
+
+/* line 521, ../scss/extras.scss */
+.fa-plane:before {
+  content: "\f072";
+}
+
+/* line 524, ../scss/extras.scss */
+.fa-calendar:before {
+  content: "\f073";
+}
+
+/* line 527, ../scss/extras.scss */
+.fa-random:before {
+  content: "\f074";
+}
+
+/* line 530, ../scss/extras.scss */
+.fa-comment:before {
+  content: "\f075";
+}
+
+/* line 533, ../scss/extras.scss */
+.fa-magnet:before {
+  content: "\f076";
+}
+
+/* line 536, ../scss/extras.scss */
+.fa-chevron-up:before {
+  content: "\f077";
+}
+
+/* line 539, ../scss/extras.scss */
+.fa-chevron-down:before {
+  content: "\f078";
+}
+
+/* line 542, ../scss/extras.scss */
+.fa-retweet:before {
+  content: "\f079";
+}
+
+/* line 545, ../scss/extras.scss */
+.fa-shopping-cart:before {
+  content: "\f07a";
+}
+
+/* line 548, ../scss/extras.scss */
+.fa-folder:before {
+  content: "\f07b";
+}
+
+/* line 551, ../scss/extras.scss */
+.fa-folder-open:before {
+  content: "\f07c";
+}
+
+/* line 554, ../scss/extras.scss */
+.fa-arrows-v:before {
+  content: "\f07d";
+}
+
+/* line 557, ../scss/extras.scss */
+.fa-arrows-h:before {
+  content: "\f07e";
+}
+
+/* line 560, ../scss/extras.scss */
+.fa-bar-chart-o:before {
+  content: "\f080";
+}
+
+/* line 563, ../scss/extras.scss */
+.fa-twitter-square:before {
+  content: "\f081";
+}
+
+/* line 566, ../scss/extras.scss */
+.fa-facebook-square:before {
+  content: "\f082";
+}
+
+/* line 569, ../scss/extras.scss */
+.fa-camera-retro:before {
+  content: "\f083";
+}
+
+/* line 572, ../scss/extras.scss */
+.fa-key:before {
+  content: "\f084";
+}
+
+/* line 576, ../scss/extras.scss */
+.fa-gears:before,
+.fa-cogs:before {
+  content: "\f085";
+}
+
+/* line 579, ../scss/extras.scss */
+.fa-comments:before {
+  content: "\f086";
+}
+
+/* line 582, ../scss/extras.scss */
+.fa-thumbs-o-up:before {
+  content: "\f087";
+}
+
+/* line 585, ../scss/extras.scss */
+.fa-thumbs-o-down:before {
+  content: "\f088";
+}
+
+/* line 588, ../scss/extras.scss */
+.fa-star-half:before {
+  content: "\f089";
+}
+
+/* line 591, ../scss/extras.scss */
+.fa-heart-o:before {
+  content: "\f08a";
+}
+
+/* line 594, ../scss/extras.scss */
+.fa-sign-out:before {
+  content: "\f08b";
+}
+
+/* line 597, ../scss/extras.scss */
+.fa-linkedin-square:before {
+  content: "\f08c";
+}
+
+/* line 600, ../scss/extras.scss */
+.fa-thumb-tack:before {
+  content: "\f08d";
+}
+
+/* line 603, ../scss/extras.scss */
+.fa-external-link:before {
+  content: "\f08e";
+}
+
+/* line 606, ../scss/extras.scss */
+.fa-sign-in:before {
+  content: "\f090";
+}
+
+/* line 609, ../scss/extras.scss */
+.fa-trophy:before {
+  content: "\f091";
+}
+
+/* line 612, ../scss/extras.scss */
+.fa-github-square:before {
+  content: "\f092";
+}
+
+/* line 615, ../scss/extras.scss */
+.fa-upload:before {
+  content: "\f093";
+}
+
+/* line 618, ../scss/extras.scss */
+.fa-lemon-o:before {
+  content: "\f094";
+}
+
+/* line 621, ../scss/extras.scss */
+.fa-phone:before {
+  content: "\f095";
+}
+
+/* line 624, ../scss/extras.scss */
+.fa-square-o:before {
+  content: "\f096";
+}
+
+/* line 627, ../scss/extras.scss */
+.fa-bookmark-o:before {
+  content: "\f097";
+}
+
+/* line 630, ../scss/extras.scss */
+.fa-phone-square:before {
+  content: "\f098";
+}
+
+/* line 633, ../scss/extras.scss */
+.fa-twitter:before {
+  content: "\f099";
+}
+
+/* line 636, ../scss/extras.scss */
+.fa-facebook:before {
+  content: "\f09a";
+}
+
+/* line 639, ../scss/extras.scss */
+.fa-github:before {
+  content: "\f09b";
+}
+
+/* line 642, ../scss/extras.scss */
+.fa-unlock:before {
+  content: "\f09c";
+}
+
+/* line 645, ../scss/extras.scss */
+.fa-credit-card:before {
+  content: "\f09d";
+}
+
+/* line 648, ../scss/extras.scss */
+.fa-rss:before {
+  content: "\f09e";
+}
+
+/* line 651, ../scss/extras.scss */
+.fa-hdd-o:before {
+  content: "\f0a0";
+}
+
+/* line 654, ../scss/extras.scss */
+.fa-bullhorn:before {
+  content: "\f0a1";
+}
+
+/* line 657, ../scss/extras.scss */
+.fa-bell:before {
+  content: "\f0f3";
+}
+
+/* line 660, ../scss/extras.scss */
+.fa-certificate:before {
+  content: "\f0a3";
+}
+
+/* line 663, ../scss/extras.scss */
+.fa-hand-o-right:before {
+  content: "\f0a4";
+}
+
+/* line 666, ../scss/extras.scss */
+.fa-hand-o-left:before {
+  content: "\f0a5";
+}
+
+/* line 669, ../scss/extras.scss */
+.fa-hand-o-up:before {
+  content: "\f0a6";
+}
+
+/* line 672, ../scss/extras.scss */
+.fa-hand-o-down:before {
+  content: "\f0a7";
+}
+
+/* line 675, ../scss/extras.scss */
+.fa-arrow-circle-left:before {
+  content: "\f0a8";
+}
+
+/* line 678, ../scss/extras.scss */
+.fa-arrow-circle-right:before {
+  content: "\f0a9";
+}
+
+/* line 681, ../scss/extras.scss */
+.fa-arrow-circle-up:before {
+  content: "\f0aa";
+}
+
+/* line 684, ../scss/extras.scss */
+.fa-arrow-circle-down:before {
+  content: "\f0ab";
+}
+
+/* line 687, ../scss/extras.scss */
+.fa-globe:before {
+  content: "\f0ac";
+}
+
+/* line 690, ../scss/extras.scss */
+.fa-wrench:before {
+  content: "\f0ad";
+}
+
+/* line 693, ../scss/extras.scss */
+.fa-tasks:before {
+  content: "\f0ae";
+}
+
+/* line 696, ../scss/extras.scss */
+.fa-filter:before {
+  content: "\f0b0";
+}
+
+/* line 699, ../scss/extras.scss */
+.fa-briefcase:before {
+  content: "\f0b1";
+}
+
+/* line 702, ../scss/extras.scss */
+.fa-arrows-alt:before {
+  content: "\f0b2";
+}
+
+/* line 706, ../scss/extras.scss */
+.fa-group:before,
+.fa-users:before {
+  content: "\f0c0";
+}
+
+/* line 710, ../scss/extras.scss */
+.fa-chain:before,
+.fa-link:before {
+  content: "\f0c1";
+}
+
+/* line 713, ../scss/extras.scss */
+.fa-cloud:before {
+  content: "\f0c2";
+}
+
+/* line 716, ../scss/extras.scss */
+.fa-flask:before {
+  content: "\f0c3";
+}
+
+/* line 720, ../scss/extras.scss */
+.fa-cut:before,
+.fa-scissors:before {
+  content: "\f0c4";
+}
+
+/* line 724, ../scss/extras.scss */
+.fa-copy:before,
+.fa-files-o:before {
+  content: "\f0c5";
+}
+
+/* line 727, ../scss/extras.scss */
+.fa-paperclip:before {
+  content: "\f0c6";
+}
+
+/* line 731, ../scss/extras.scss */
+.fa-save:before,
+.fa-floppy-o:before {
+  content: "\f0c7";
+}
+
+/* line 734, ../scss/extras.scss */
+.fa-square:before {
+  content: "\f0c8";
+}
+
+/* line 737, ../scss/extras.scss */
+.fa-bars:before {
+  content: "\f0c9";
+}
+
+/* line 740, ../scss/extras.scss */
+.fa-list-ul:before {
+  content: "\f0ca";
+}
+
+/* line 743, ../scss/extras.scss */
+.fa-list-ol:before {
+  content: "\f0cb";
+}
+
+/* line 746, ../scss/extras.scss */
+.fa-strikethrough:before {
+  content: "\f0cc";
+}
+
+/* line 749, ../scss/extras.scss */
+.fa-underline:before {
+  content: "\f0cd";
+}
+
+/* line 752, ../scss/extras.scss */
+.fa-table:before {
+  content: "\f0ce";
+}
+
+/* line 755, ../scss/extras.scss */
+.fa-magic:before {
+  content: "\f0d0";
+}
+
+/* line 758, ../scss/extras.scss */
+.fa-truck:before {
+  content: "\f0d1";
+}
+
+/* line 761, ../scss/extras.scss */
+.fa-pinterest:before {
+  content: "\f0d2";
+}
+
+/* line 764, ../scss/extras.scss */
+.fa-pinterest-square:before {
+  content: "\f0d3";
+}
+
+/* line 767, ../scss/extras.scss */
+.fa-google-plus-square:before {
+  content: "\f0d4";
+}
+
+/* line 770, ../scss/extras.scss */
+.fa-google-plus:before {
+  content: "\f0d5";
+}
+
+/* line 773, ../scss/extras.scss */
+.fa-money:before {
+  content: "\f0d6";
+}
+
+/* line 776, ../scss/extras.scss */
+.fa-caret-down:before {
+  content: "\f0d7";
+}
+
+/* line 779, ../scss/extras.scss */
+.fa-caret-up:before {
+  content: "\f0d8";
+}
+
+/* line 782, ../scss/extras.scss */
+.fa-caret-left:before {
+  content: "\f0d9";
+}
+
+/* line 785, ../scss/extras.scss */
+.fa-caret-right:before {
+  content: "\f0da";
+}
+
+/* line 788, ../scss/extras.scss */
+.fa-columns:before {
+  content: "\f0db";
+}
+
+/* line 792, ../scss/extras.scss */
+.fa-unsorted:before,
+.fa-sort:before {
+  content: "\f0dc";
+}
+
+/* line 796, ../scss/extras.scss */
+.fa-sort-down:before,
+.fa-sort-asc:before {
+  content: "\f0dd";
+}
+
+/* line 800, ../scss/extras.scss */
+.fa-sort-up:before,
+.fa-sort-desc:before {
+  content: "\f0de";
+}
+
+/* line 803, ../scss/extras.scss */
+.fa-envelope:before {
+  content: "\f0e0";
+}
+
+/* line 806, ../scss/extras.scss */
+.fa-linkedin:before {
+  content: "\f0e1";
+}
+
+/* line 810, ../scss/extras.scss */
+.fa-rotate-left:before,
+.fa-undo:before {
+  content: "\f0e2";
+}
+
+/* line 814, ../scss/extras.scss */
+.fa-legal:before,
+.fa-gavel:before {
+  content: "\f0e3";
+}
+
+/* line 818, ../scss/extras.scss */
+.fa-dashboard:before,
+.fa-tachometer:before {
+  content: "\f0e4";
+}
+
+/* line 821, ../scss/extras.scss */
+.fa-comment-o:before {
+  content: "\f0e5";
+}
+
+/* line 824, ../scss/extras.scss */
+.fa-comments-o:before {
+  content: "\f0e6";
+}
+
+/* line 828, ../scss/extras.scss */
+.fa-flash:before,
+.fa-bolt:before {
+  content: "\f0e7";
+}
+
+/* line 831, ../scss/extras.scss */
+.fa-sitemap:before {
+  content: "\f0e8";
+}
+
+/* line 834, ../scss/extras.scss */
+.fa-umbrella:before {
+  content: "\f0e9";
+}
+
+/* line 838, ../scss/extras.scss */
+.fa-paste:before,
+.fa-clipboard:before {
+  content: "\f0ea";
+}
+
+/* line 841, ../scss/extras.scss */
+.fa-lightbulb-o:before {
+  content: "\f0eb";
+}
+
+/* line 844, ../scss/extras.scss */
+.fa-exchange:before {
+  content: "\f0ec";
+}
+
+/* line 847, ../scss/extras.scss */
+.fa-cloud-download:before {
+  content: "\f0ed";
+}
+
+/* line 850, ../scss/extras.scss */
+.fa-cloud-upload:before {
+  content: "\f0ee";
+}
+
+/* line 853, ../scss/extras.scss */
+.fa-user-md:before {
+  content: "\f0f0";
+}
+
+/* line 856, ../scss/extras.scss */
+.fa-stethoscope:before {
+  content: "\f0f1";
+}
+
+/* line 859, ../scss/extras.scss */
+.fa-suitcase:before {
+  content: "\f0f2";
+}
+
+/* line 862, ../scss/extras.scss */
+.fa-bell-o:before {
+  content: "\f0a2";
+}
+
+/* line 865, ../scss/extras.scss */
+.fa-coffee:before {
+  content: "\f0f4";
+}
+
+/* line 868, ../scss/extras.scss */
+.fa-cutlery:before {
+  content: "\f0f5";
+}
+
+/* line 871, ../scss/extras.scss */
+.fa-file-text-o:before {
+  content: "\f0f6";
+}
+
+/* line 874, ../scss/extras.scss */
+.fa-building-o:before {
+  content: "\f0f7";
+}
+
+/* line 877, ../scss/extras.scss */
+.fa-hospital-o:before {
+  content: "\f0f8";
+}
+
+/* line 880, ../scss/extras.scss */
+.fa-ambulance:before {
+  content: "\f0f9";
+}
+
+/* line 883, ../scss/extras.scss */
+.fa-medkit:before {
+  content: "\f0fa";
+}
+
+/* line 886, ../scss/extras.scss */
+.fa-fighter-jet:before {
+  content: "\f0fb";
+}
+
+/* line 889, ../scss/extras.scss */
+.fa-beer:before {
+  content: "\f0fc";
+}
+
+/* line 892, ../scss/extras.scss */
+.fa-h-square:before {
+  content: "\f0fd";
+}
+
+/* line 895, ../scss/extras.scss */
+.fa-plus-square:before {
+  content: "\f0fe";
+}
+
+/* line 898, ../scss/extras.scss */
+.fa-angle-double-left:before {
+  content: "\f100";
+}
+
+/* line 901, ../scss/extras.scss */
+.fa-angle-double-right:before {
+  content: "\f101";
+}
+
+/* line 904, ../scss/extras.scss */
+.fa-angle-double-up:before {
+  content: "\f102";
+}
+
+/* line 907, ../scss/extras.scss */
+.fa-angle-double-down:before {
+  content: "\f103";
+}
+
+/* line 910, ../scss/extras.scss */
+.fa-angle-left:before {
+  content: "\f104";
+}
+
+/* line 913, ../scss/extras.scss */
+.fa-angle-right:before {
+  content: "\f105";
+}
+
+/* line 916, ../scss/extras.scss */
+.fa-angle-up:before {
+  content: "\f106";
+}
+
+/* line 919, ../scss/extras.scss */
+.fa-angle-down:before {
+  content: "\f107";
+}
+
+/* line 922, ../scss/extras.scss */
+.fa-desktop:before {
+  content: "\f108";
+}
+
+/* line 925, ../scss/extras.scss */
+.fa-laptop:before {
+  content: "\f109";
+}
+
+/* line 928, ../scss/extras.scss */
+.fa-tablet:before {
+  content: "\f10a";
+}
+
+/* line 932, ../scss/extras.scss */
+.fa-mobile-phone:before,
+.fa-mobile:before {
+  content: "\f10b";
+}
+
+/* line 935, ../scss/extras.scss */
+.fa-circle-o:before {
+  content: "\f10c";
+}
+
+/* line 938, ../scss/extras.scss */
+.fa-quote-left:before {
+  content: "\f10d";
+}
+
+/* line 941, ../scss/extras.scss */
+.fa-quote-right:before {
+  content: "\f10e";
+}
+
+/* line 944, ../scss/extras.scss */
+.fa-spinner:before {
+  content: "\f110";
+}
+
+/* line 947, ../scss/extras.scss */
+.fa-circle:before {
+  content: "\f111";
+}
+
+/* line 951, ../scss/extras.scss */
+.fa-mail-reply:before,
+.fa-reply:before {
+  content: "\f112";
+}
+
+/* line 954, ../scss/extras.scss */
+.fa-github-alt:before {
+  content: "\f113";
+}
+
+/* line 957, ../scss/extras.scss */
+.fa-folder-o:before {
+  content: "\f114";
+}
+
+/* line 960, ../scss/extras.scss */
+.fa-folder-open-o:before {
+  content: "\f115";
+}
+
+/* line 963, ../scss/extras.scss */
+.fa-smile-o:before {
+  content: "\f118";
+}
+
+/* line 966, ../scss/extras.scss */
+.fa-frown-o:before {
+  content: "\f119";
+}
+
+/* line 969, ../scss/extras.scss */
+.fa-meh-o:before {
+  content: "\f11a";
+}
+
+/* line 972, ../scss/extras.scss */
+.fa-gamepad:before {
+  content: "\f11b";
+}
+
+/* line 975, ../scss/extras.scss */
+.fa-keyboard-o:before {
+  content: "\f11c";
+}
+
+/* line 978, ../scss/extras.scss */
+.fa-flag-o:before {
+  content: "\f11d";
+}
+
+/* line 981, ../scss/extras.scss */
+.fa-flag-checkered:before {
+  content: "\f11e";
+}
+
+/* line 984, ../scss/extras.scss */
+.fa-terminal:before {
+  content: "\f120";
+}
+
+/* line 987, ../scss/extras.scss */
+.fa-code:before {
+  content: "\f121";
+}
+
+/* line 990, ../scss/extras.scss */
+.fa-reply-all:before {
+  content: "\f122";
+}
+
+/* line 993, ../scss/extras.scss */
+.fa-mail-reply-all:before {
+  content: "\f122";
+}
+
+/* line 998, ../scss/extras.scss */
+.fa-star-half-empty:before,
+.fa-star-half-full:before,
+.fa-star-half-o:before {
+  content: "\f123";
+}
+
+/* line 1001, ../scss/extras.scss */
+.fa-location-arrow:before {
+  content: "\f124";
+}
+
+/* line 1004, ../scss/extras.scss */
+.fa-crop:before {
+  content: "\f125";
+}
+
+/* line 1007, ../scss/extras.scss */
+.fa-code-fork:before {
+  content: "\f126";
+}
+
+/* line 1011, ../scss/extras.scss */
+.fa-unlink:before,
+.fa-chain-broken:before {
+  content: "\f127";
+}
+
+/* line 1014, ../scss/extras.scss */
+.fa-question:before {
+  content: "\f128";
+}
+
+/* line 1017, ../scss/extras.scss */
+.fa-info:before {
+  content: "\f129";
+}
+
+/* line 1020, ../scss/extras.scss */
+.fa-exclamation:before {
+  content: "\f12a";
+}
+
+/* line 1023, ../scss/extras.scss */
+.fa-superscript:before {
+  content: "\f12b";
+}
+
+/* line 1026, ../scss/extras.scss */
+.fa-subscript:before {
+  content: "\f12c";
+}
+
+/* line 1029, ../scss/extras.scss */
+.fa-eraser:before {
+  content: "\f12d";
+}
+
+/* line 1032, ../scss/extras.scss */
+.fa-puzzle-piece:before {
+  content: "\f12e";
+}
+
+/* line 1035, ../scss/extras.scss */
+.fa-microphone:before {
+  content: "\f130";
+}
+
+/* line 1038, ../scss/extras.scss */
+.fa-microphone-slash:before {
+  content: "\f131";
+}
+
+/* line 1041, ../scss/extras.scss */
+.fa-shield:before {
+  content: "\f132";
+}
+
+/* line 1044, ../scss/extras.scss */
+.fa-calendar-o:before {
+  content: "\f133";
+}
+
+/* line 1047, ../scss/extras.scss */
+.fa-fire-extinguisher:before {
+  content: "\f134";
+}
+
+/* line 1050, ../scss/extras.scss */
+.fa-rocket:before {
+  content: "\f135";
+}
+
+/* line 1053, ../scss/extras.scss */
+.fa-maxcdn:before {
+  content: "\f136";
+}
+
+/* line 1056, ../scss/extras.scss */
+.fa-chevron-circle-left:before {
+  content: "\f137";
+}
+
+/* line 1059, ../scss/extras.scss */
+.fa-chevron-circle-right:before {
+  content: "\f138";
+}
+
+/* line 1062, ../scss/extras.scss */
+.fa-chevron-circle-up:before {
+  content: "\f139";
+}
+
+/* line 1065, ../scss/extras.scss */
+.fa-chevron-circle-down:before {
+  content: "\f13a";
+}
+
+/* line 1068, ../scss/extras.scss */
+.fa-html5:before {
+  content: "\f13b";
+}
+
+/* line 1071, ../scss/extras.scss */
+.fa-css3:before {
+  content: "\f13c";
+}
+
+/* line 1074, ../scss/extras.scss */
+.fa-anchor:before {
+  content: "\f13d";
+}
+
+/* line 1077, ../scss/extras.scss */
+.fa-unlock-alt:before {
+  content: "\f13e";
+}
+
+/* line 1080, ../scss/extras.scss */
+.fa-bullseye:before {
+  content: "\f140";
+}
+
+/* line 1083, ../scss/extras.scss */
+.fa-ellipsis-h:before {
+  content: "\f141";
+}
+
+/* line 1086, ../scss/extras.scss */
+.fa-ellipsis-v:before {
+  content: "\f142";
+}
+
+/* line 1089, ../scss/extras.scss */
+.fa-rss-square:before {
+  content: "\f143";
+}
+
+/* line 1092, ../scss/extras.scss */
+.fa-play-circle:before {
+  content: "\f144";
+}
+
+/* line 1095, ../scss/extras.scss */
+.fa-ticket:before {
+  content: "\f145";
+}
+
+/* line 1098, ../scss/extras.scss */
+.fa-minus-square:before {
+  content: "\f146";
+}
+
+/* line 1101, ../scss/extras.scss */
+.fa-minus-square-o:before {
+  content: "\f147";
+}
+
+/* line 1104, ../scss/extras.scss */
+.fa-level-up:before {
+  content: "\f148";
+}
+
+/* line 1107, ../scss/extras.scss */
+.fa-level-down:before {
+  content: "\f149";
+}
+
+/* line 1110, ../scss/extras.scss */
+.fa-check-square:before {
+  content: "\f14a";
+}
+
+/* line 1113, ../scss/extras.scss */
+.fa-pencil-square:before {
+  content: "\f14b";
+}
+
+/* line 1116, ../scss/extras.scss */
+.fa-external-link-square:before {
+  content: "\f14c";
+}
+
+/* line 1119, ../scss/extras.scss */
+.fa-share-square:before {
+  content: "\f14d";
+}
+
+/* line 1122, ../scss/extras.scss */
+.fa-compass:before {
+  content: "\f14e";
+}
+
+/* line 1126, ../scss/extras.scss */
+.fa-toggle-down:before,
+.fa-caret-square-o-down:before {
+  content: "\f150";
+}
+
+/* line 1130, ../scss/extras.scss */
+.fa-toggle-up:before,
+.fa-caret-square-o-up:before {
+  content: "\f151";
+}
+
+/* line 1134, ../scss/extras.scss */
+.fa-toggle-right:before,
+.fa-caret-square-o-right:before {
+  content: "\f152";
+}
+
+/* line 1138, ../scss/extras.scss */
+.fa-euro:before,
+.fa-eur:before {
+  content: "\f153";
+}
+
+/* line 1141, ../scss/extras.scss */
+.fa-gbp:before {
+  content: "\f154";
+}
+
+/* line 1145, ../scss/extras.scss */
+.fa-dollar:before,
+.fa-usd:before {
+  content: "\f155";
+}
+
+/* line 1149, ../scss/extras.scss */
+.fa-rupee:before,
+.fa-inr:before {
+  content: "\f156";
+}
+
+/* line 1155, ../scss/extras.scss */
+.fa-cny:before,
+.fa-rmb:before,
+.fa-yen:before,
+.fa-jpy:before {
+  content: "\f157";
+}
+
+/* line 1160, ../scss/extras.scss */
+.fa-ruble:before,
+.fa-rouble:before,
+.fa-rub:before {
+  content: "\f158";
+}
+
+/* line 1164, ../scss/extras.scss */
+.fa-won:before,
+.fa-krw:before {
+  content: "\f159";
+}
+
+/* line 1168, ../scss/extras.scss */
+.fa-bitcoin:before,
+.fa-btc:before {
+  content: "\f15a";
+}
+
+/* line 1171, ../scss/extras.scss */
+.fa-file:before {
+  content: "\f15b";
+}
+
+/* line 1174, ../scss/extras.scss */
+.fa-file-text:before {
+  content: "\f15c";
+}
+
+/* line 1177, ../scss/extras.scss */
+.fa-sort-alpha-asc:before {
+  content: "\f15d";
+}
+
+/* line 1180, ../scss/extras.scss */
+.fa-sort-alpha-desc:before {
+  content: "\f15e";
+}
+
+/* line 1183, ../scss/extras.scss */
+.fa-sort-amount-asc:before {
+  content: "\f160";
+}
+
+/* line 1186, ../scss/extras.scss */
+.fa-sort-amount-desc:before {
+  content: "\f161";
+}
+
+/* line 1189, ../scss/extras.scss */
+.fa-sort-numeric-asc:before {
+  content: "\f162";
+}
+
+/* line 1192, ../scss/extras.scss */
+.fa-sort-numeric-desc:before {
+  content: "\f163";
+}
+
+/* line 1195, ../scss/extras.scss */
+.fa-thumbs-up:before {
+  content: "\f164";
+}
+
+/* line 1198, ../scss/extras.scss */
+.fa-thumbs-down:before {
+  content: "\f165";
+}
+
+/* line 1201, ../scss/extras.scss */
+.fa-youtube-square:before {
+  content: "\f166";
+}
+
+/* line 1204, ../scss/extras.scss */
+.fa-youtube:before {
+  content: "\f167";
+}
+
+/* line 1207, ../scss/extras.scss */
+.fa-xing:before {
+  content: "\f168";
+}
+
+/* line 1210, ../scss/extras.scss */
+.fa-xing-square:before {
+  content: "\f169";
+}
+
+/* line 1213, ../scss/extras.scss */
+.fa-youtube-play:before {
+  content: "\f16a";
+}
+
+/* line 1216, ../scss/extras.scss */
+.fa-dropbox:before {
+  content: "\f16b";
+}
+
+/* line 1219, ../scss/extras.scss */
+.fa-stack-overflow:before {
+  content: "\f16c";
+}
+
+/* line 1222, ../scss/extras.scss */
+.fa-instagram:before {
+  content: "\f16d";
+}
+
+/* line 1225, ../scss/extras.scss */
+.fa-flickr:before {
+  content: "\f16e";
+}
+
+/* line 1228, ../scss/extras.scss */
+.fa-adn:before {
+  content: "\f170";
+}
+
+/* line 1231, ../scss/extras.scss */
+.fa-bitbucket:before {
+  content: "\f171";
+}
+
+/* line 1234, ../scss/extras.scss */
+.fa-bitbucket-square:before {
+  content: "\f172";
+}
+
+/* line 1237, ../scss/extras.scss */
+.fa-tumblr:before {
+  content: "\f173";
+}
+
+/* line 1240, ../scss/extras.scss */
+.fa-tumblr-square:before {
+  content: "\f174";
+}
+
+/* line 1243, ../scss/extras.scss */
+.fa-long-arrow-down:before {
+  content: "\f175";
+}
+
+/* line 1246, ../scss/extras.scss */
+.fa-long-arrow-up:before {
+  content: "\f176";
+}
+
+/* line 1249, ../scss/extras.scss */
+.fa-long-arrow-left:before {
+  content: "\f177";
+}
+
+/* line 1252, ../scss/extras.scss */
+.fa-long-arrow-right:before {
+  content: "\f178";
+}
+
+/* line 1255, ../scss/extras.scss */
+.fa-apple:before {
+  content: "\f179";
+}
+
+/* line 1258, ../scss/extras.scss */
+.fa-windows:before {
+  content: "\f17a";
+}
+
+/* line 1261, ../scss/extras.scss */
+.fa-android:before {
+  content: "\f17b";
+}
+
+/* line 1264, ../scss/extras.scss */
+.fa-linux:before {
+  content: "\f17c";
+}
+
+/* line 1267, ../scss/extras.scss */
+.fa-dribbble:before {
+  content: "\f17d";
+}
+
+/* line 1270, ../scss/extras.scss */
+.fa-skype:before {
+  content: "\f17e";
+}
+
+/* line 1273, ../scss/extras.scss */
+.fa-foursquare:before {
+  content: "\f180";
+}
+
+/* line 1276, ../scss/extras.scss */
+.fa-trello:before {
+  content: "\f181";
+}
+
+/* line 1279, ../scss/extras.scss */
+.fa-female:before {
+  content: "\f182";
+}
+
+/* line 1282, ../scss/extras.scss */
+.fa-male:before {
+  content: "\f183";
+}
+
+/* line 1285, ../scss/extras.scss */
+.fa-gittip:before {
+  content: "\f184";
+}
+
+/* line 1288, ../scss/extras.scss */
+.fa-sun-o:before {
+  content: "\f185";
+}
+
+/* line 1291, ../scss/extras.scss */
+.fa-moon-o:before {
+  content: "\f186";
+}
+
+/* line 1294, ../scss/extras.scss */
+.fa-archive:before {
+  content: "\f187";
+}
+
+/* line 1297, ../scss/extras.scss */
+.fa-bug:before {
+  content: "\f188";
+}
+
+/* line 1300, ../scss/extras.scss */
+.fa-vk:before {
+  content: "\f189";
+}
+
+/* line 1303, ../scss/extras.scss */
+.fa-weibo:before {
+  content: "\f18a";
+}
+
+/* line 1306, ../scss/extras.scss */
+.fa-renren:before {
+  content: "\f18b";
+}
+
+/* line 1309, ../scss/extras.scss */
+.fa-pagelines:before {
+  content: "\f18c";
+}
+
+/* line 1312, ../scss/extras.scss */
+.fa-stack-exchange:before {
+  content: "\f18d";
+}
+
+/* line 1315, ../scss/extras.scss */
+.fa-arrow-circle-o-right:before {
+  content: "\f18e";
+}
+
+/* line 1318, ../scss/extras.scss */
+.fa-arrow-circle-o-left:before {
+  content: "\f190";
+}
+
+/* line 1322, ../scss/extras.scss */
+.fa-toggle-left:before,
+.fa-caret-square-o-left:before {
+  content: "\f191";
+}
+
+/* line 1325, ../scss/extras.scss */
+.fa-dot-circle-o:before {
+  content: "\f192";
+}
+
+/* line 1328, ../scss/extras.scss */
+.fa-wheelchair:before {
+  content: "\f193";
+}
+
+/* line 1331, ../scss/extras.scss */
+.fa-vimeo-square:before {
+  content: "\f194";
+}
+
+/* line 1335, ../scss/extras.scss */
+.fa-turkish-lira:before,
+.fa-try:before {
+  content: "\f195";
+}
+
+/* line 1338, ../scss/extras.scss */
+.fa-plus-square-o:before {
+  content: "\f196";
+}
+
+/* Plugins */
+/* jQuery UI */
+/*! jQuery UI - v1.10.3 - 2013-11-20
+* http://jqueryui.com
+* Includes: jquery.ui.core.css, jquery.ui.resizable.css, jquery.ui.selectable.css, jquery.ui.accordion.css, jquery.ui.autocomplete.css, jquery.ui.button.css, jquery.ui.datepicker.css, jquery.ui.dialog.css, jquery.ui.menu.css, jquery.ui.progressbar.css, jquery.ui.slider.css, jquery.ui.spinner.css, jquery.ui.tabs.css, jquery.ui.tooltip.css, jquery.ui.theme.css
+* To view and modify this theme, visit http://jqueryui.com/themeroller/?ffDefault=Trebuchet%20MS%2CTahoma%2CVerdana%2CArial%2Csans-serif&fwDefault=bold&fsDefault=1.1em&cornerRadius=4px&bgColorHeader=f6a828&bgTextureHeader=gloss_wave&bgImgOpacityHeader=35&borderColorHeader=e78f08&fcHeader=ffffff&iconColorHeader=ffffff&bgColorContent=eeeeee&bgTextureContent=highlight_soft&bgImgOpacityContent=100&borderColorContent=dddddd&fcContent=333333&iconColorContent=222222&bgColorDefault=f6f6f6&bgTextureDefault=glass&bgImgOpacityDefault=100&borderColorDefault=cccccc&fcDefault=1c94c4&iconColorDefault=ef8c08&bgColorHover=fdf5ce&bgTextureHover=glass&bgImgOpacityHover=100&borderColorHover=fbcb09&fcHover=c77405&iconColorHover=ef8c08&bgColorActive=ffffff&bgTextureActive=glass&bgImgOpacityActive=65&borderColorActive=fbd850&fcActive=eb8f00&iconColorActive=ef8c08&bgColorHighlight=ffe45c&bgTextureHighlight=highlight_soft&bgImgOpacityHighlight=75&borderColorHighlight=fed22f&fcHighlight=363636&iconColorHighlight=228ef1&bgColorError=b81900&bgTextureError=diagonals_thick&bgImgOpacityError=18&borderColorError=cd0a0a&fcError=ffffff&iconColorError=ffd27a&bgColorOverlay=666666&bgTextureOverlay=diagonals_thick&bgImgOpacityOverlay=20&opacityOverlay=50&bgColorShadow=000000&bgTextureShadow=flat&bgImgOpacityShadow=10&opacityShadow=20&thicknessShadow=5px&offsetTopShadow=-5px&offsetLeftShadow=-5px&cornerRadiusShadow=5px
+* Copyright 2013 jQuery Foundation and other contributors; Licensed MIT */
+
+/* Layout helpers
+----------------------------------*/
+.ui-helper-hidden {
+	display: none;
+}
+.ui-helper-hidden-accessible {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+.ui-helper-reset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	line-height: 1.3;
+	text-decoration: none;
+	font-size: 100%;
+	list-style: none;
+}
+.ui-helper-clearfix:before,
+.ui-helper-clearfix:after {
+	content: "";
+	display: table;
+	border-collapse: collapse;
+}
+.ui-helper-clearfix:after {
+	clear: both;
+}
+.ui-helper-clearfix {
+	min-height: 0; /* support: IE7 */
+}
+.ui-helper-zfix {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	opacity: 0;
+	filter:Alpha(Opacity=0);
+}
+
+.ui-front {
+	z-index: 100;
+}
+
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-disabled {
+	cursor: default !important;
+}
+
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon {
+	display: block;
+	text-indent: -99999px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Overlays */
+.ui-widget-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.ui-resizable {
+	position: relative;
+}
+.ui-resizable-handle {
+	position: absolute;
+	font-size: 0.1px;
+	display: block;
+}
+.ui-resizable-disabled .ui-resizable-handle,
+.ui-resizable-autohide .ui-resizable-handle {
+	display: none;
+}
+.ui-resizable-n {
+	cursor: n-resize;
+	height: 7px;
+	width: 100%;
+	top: -5px;
+	left: 0;
+}
+.ui-resizable-s {
+	cursor: s-resize;
+	height: 7px;
+	width: 100%;
+	bottom: -5px;
+	left: 0;
+}
+.ui-resizable-e {
+	cursor: e-resize;
+	width: 7px;
+	right: -5px;
+	top: 0;
+	height: 100%;
+}
+.ui-resizable-w {
+	cursor: w-resize;
+	width: 7px;
+	left: -5px;
+	top: 0;
+	height: 100%;
+}
+.ui-resizable-se {
+	cursor: se-resize;
+	width: 12px;
+	height: 12px;
+	right: 1px;
+	bottom: 1px;
+}
+.ui-resizable-sw {
+	cursor: sw-resize;
+	width: 9px;
+	height: 9px;
+	left: -5px;
+	bottom: -5px;
+}
+.ui-resizable-nw {
+	cursor: nw-resize;
+	width: 9px;
+	height: 9px;
+	left: -5px;
+	top: -5px;
+}
+.ui-resizable-ne {
+	cursor: ne-resize;
+	width: 9px;
+	height: 9px;
+	right: -5px;
+	top: -5px;
+}
+.ui-selectable-helper {
+	position: absolute;
+	z-index: 100;
+	border: 1px dotted black;
+}
+.ui-accordion .ui-accordion-header {
+	display: block;
+	cursor: pointer;
+	position: relative;
+	margin-top: 2px;
+	padding: .5em .5em .5em .7em;
+	min-height: 0; /* support: IE7 */
+}
+.ui-accordion .ui-accordion-icons {
+	padding-left: 2.2em;
+}
+.ui-accordion .ui-accordion-noicons {
+	padding-left: .7em;
+}
+.ui-accordion .ui-accordion-icons .ui-accordion-icons {
+	padding-left: 2.2em;
+}
+.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+	position: absolute;
+	left: .5em;
+	top: 50%;
+	margin-top: -8px;
+}
+.ui-accordion .ui-accordion-content {
+	padding: 1em 2.2em;
+	border-top: 0;
+	overflow: auto;
+}
+.ui-autocomplete {
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: default;
+}
+.ui-button {
+	display: inline-block;
+	position: relative;
+	padding: 0;
+	line-height: normal;
+	margin-right: .1em;
+	cursor: pointer;
+	vertical-align: middle;
+	text-align: center;
+	overflow: visible; /* removes extra width in IE */
+}
+.ui-button,
+.ui-button:link,
+.ui-button:visited,
+.ui-button:hover,
+.ui-button:active {
+	text-decoration: none;
+}
+/* to make room for the icon, a width needs to be set here */
+.ui-button-icon-only {
+	width: 2.2em;
+}
+/* button elements seem to need a little more width */
+button.ui-button-icon-only {
+	width: 2.4em;
+}
+.ui-button-icons-only {
+	width: 3.4em;
+}
+button.ui-button-icons-only {
+	width: 3.7em;
+}
+
+/* button text element */
+.ui-button .ui-button-text {
+	display: block;
+	line-height: normal;
+}
+.ui-button-text-only .ui-button-text {
+	padding: .4em 1em;
+}
+.ui-button-icon-only .ui-button-text,
+.ui-button-icons-only .ui-button-text {
+	padding: .4em;
+	text-indent: -9999999px;
+}
+.ui-button-text-icon-primary .ui-button-text,
+.ui-button-text-icons .ui-button-text {
+	padding: .4em 1em .4em 2.1em;
+}
+.ui-button-text-icon-secondary .ui-button-text,
+.ui-button-text-icons .ui-button-text {
+	padding: .4em 2.1em .4em 1em;
+}
+.ui-button-text-icons .ui-button-text {
+	padding-left: 2.1em;
+	padding-right: 2.1em;
+}
+/* no icon support for input elements, provide padding by default */
+input.ui-button {
+	padding: .4em 1em;
+}
+
+/* button icon element(s) */
+.ui-button-icon-only .ui-icon,
+.ui-button-text-icon-primary .ui-icon,
+.ui-button-text-icon-secondary .ui-icon,
+.ui-button-text-icons .ui-icon,
+.ui-button-icons-only .ui-icon {
+	position: absolute;
+	top: 50%;
+	margin-top: -8px;
+}
+.ui-button-icon-only .ui-icon {
+	left: 50%;
+	margin-left: -8px;
+}
+.ui-button-text-icon-primary .ui-button-icon-primary,
+.ui-button-text-icons .ui-button-icon-primary,
+.ui-button-icons-only .ui-button-icon-primary {
+	left: .5em;
+}
+.ui-button-text-icon-secondary .ui-button-icon-secondary,
+.ui-button-text-icons .ui-button-icon-secondary,
+.ui-button-icons-only .ui-button-icon-secondary {
+	right: .5em;
+}
+
+/* button sets */
+.ui-buttonset {
+	margin-right: 7px;
+}
+.ui-buttonset .ui-button {
+	margin-left: 0;
+	margin-right: -.3em;
+}
+
+/* workarounds */
+/* reset extra padding in Firefox, see h5bp.com/l */
+input.ui-button::-moz-focus-inner,
+button.ui-button::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+.ui-datepicker {
+	width: 17em;
+	padding: .2em .2em 0;
+	display: none;
+}
+.ui-datepicker .ui-datepicker-header {
+	position: relative;
+	padding: .2em 0;
+}
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+	position: absolute;
+	top: 2px;
+	width: 1.8em;
+	height: 1.8em;
+}
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover {
+	top: 1px;
+}
+.ui-datepicker .ui-datepicker-prev {
+	left: 2px;
+}
+.ui-datepicker .ui-datepicker-next {
+	right: 2px;
+}
+.ui-datepicker .ui-datepicker-prev-hover {
+	left: 1px;
+}
+.ui-datepicker .ui-datepicker-next-hover {
+	right: 1px;
+}
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+	display: block;
+	position: absolute;
+	left: 50%;
+	margin-left: -8px;
+	top: 50%;
+	margin-top: -8px;
+}
+.ui-datepicker .ui-datepicker-title {
+	margin: 0 2.3em;
+	line-height: 1.8em;
+	text-align: center;
+}
+.ui-datepicker .ui-datepicker-title select {
+	font-size: 1em;
+	margin: 1px 0;
+}
+.ui-datepicker select.ui-datepicker-month-year {
+	width: 100%;
+}
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+	width: 49%;
+}
+.ui-datepicker table {
+	width: 100%;
+	font-size: .9em;
+	border-collapse: collapse;
+	margin: 0 0 .4em;
+}
+.ui-datepicker th {
+	padding: .7em .3em;
+	text-align: center;
+	font-weight: bold;
+	border: 0;
+}
+.ui-datepicker td {
+	border: 0;
+	padding: 1px;
+}
+.ui-datepicker td span,
+.ui-datepicker td a {
+	display: block;
+	padding: .2em;
+	text-align: right;
+	text-decoration: none;
+}
+.ui-datepicker .ui-datepicker-buttonpane {
+	background-image: none;
+	margin: .7em 0 0 0;
+	padding: 0 .2em;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+}
+.ui-datepicker .ui-datepicker-buttonpane button {
+	float: right;
+	margin: .5em .2em .4em;
+	cursor: pointer;
+	padding: .2em .6em .3em .6em;
+	width: auto;
+	overflow: visible;
+}
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+	float: left;
+}
+
+/* with multiple calendars */
+.ui-datepicker.ui-datepicker-multi {
+	width: auto;
+}
+.ui-datepicker-multi .ui-datepicker-group {
+	float: left;
+}
+.ui-datepicker-multi .ui-datepicker-group table {
+	width: 95%;
+	margin: 0 auto .4em;
+}
+.ui-datepicker-multi-2 .ui-datepicker-group {
+	width: 50%;
+}
+.ui-datepicker-multi-3 .ui-datepicker-group {
+	width: 33.3%;
+}
+.ui-datepicker-multi-4 .ui-datepicker-group {
+	width: 25%;
+}
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
+	border-left-width: 0;
+}
+.ui-datepicker-multi .ui-datepicker-buttonpane {
+	clear: left;
+}
+.ui-datepicker-row-break {
+	clear: both;
+	width: 100%;
+	font-size: 0;
+}
+
+/* RTL support */
+.ui-datepicker-rtl {
+	direction: rtl;
+}
+.ui-datepicker-rtl .ui-datepicker-prev {
+	right: 2px;
+	left: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-next {
+	left: 2px;
+	right: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-prev:hover {
+	right: 1px;
+	left: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-next:hover {
+	left: 1px;
+	right: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane {
+	clear: right;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane button {
+	float: left;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current,
+.ui-datepicker-rtl .ui-datepicker-group {
+	float: right;
+}
+.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
+	border-right-width: 0;
+	border-left-width: 1px;
+}
+.ui-dialog {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: .2em;
+	outline: 0;
+}
+.ui-dialog .ui-dialog-titlebar {
+	padding: .4em 1em;
+	position: relative;
+}
+.ui-dialog .ui-dialog-title {
+	float: left;
+	margin: .1em 0;
+	white-space: nowrap;
+	width: 90%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.ui-dialog .ui-dialog-titlebar-close {
+	position: absolute;
+	right: .3em;
+	top: 50%;
+	width: 21px;
+	margin: -10px 0 0 0;
+	padding: 1px;
+	height: 20px;
+}
+.ui-dialog .ui-dialog-content {
+	position: relative;
+	border: 0;
+	padding: .5em 1em;
+	background: none;
+	overflow: auto;
+}
+.ui-dialog .ui-dialog-buttonpane {
+	text-align: left;
+	border-width: 1px 0 0 0;
+	background-image: none;
+	margin-top: .5em;
+	padding: .3em 1em .5em .4em;
+}
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+	float: right;
+}
+.ui-dialog .ui-dialog-buttonpane button {
+	margin: .5em .4em .5em 0;
+	cursor: pointer;
+}
+.ui-dialog .ui-resizable-se {
+	width: 12px;
+	height: 12px;
+	right: -5px;
+	bottom: -5px;
+	background-position: 16px 16px;
+}
+.ui-draggable .ui-dialog-titlebar {
+	cursor: move;
+}
+.ui-menu {
+	list-style: none;
+	padding: 2px;
+	margin: 0;
+	display: block;
+	outline: none;
+}
+.ui-menu .ui-menu {
+	margin-top: -3px;
+	position: absolute;
+}
+.ui-menu .ui-menu-item {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	/* support: IE10, see #8844 */
+	list-style-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
+}
+.ui-menu .ui-menu-divider {
+	margin: 5px -2px 5px -2px;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	border-width: 1px 0 0 0;
+}
+.ui-menu .ui-menu-item a {
+	text-decoration: none;
+	display: block;
+	padding: 2px .4em;
+	line-height: 1.5;
+	min-height: 0; /* support: IE7 */
+	font-weight: normal;
+}
+.ui-menu .ui-menu-item a.ui-state-focus,
+.ui-menu .ui-menu-item a.ui-state-active {
+	font-weight: normal;
+	margin: -1px;
+}
+
+.ui-menu .ui-state-disabled {
+	font-weight: normal;
+	margin: .4em 0 .2em;
+	line-height: 1.5;
+}
+.ui-menu .ui-state-disabled a {
+	cursor: default;
+}
+
+/* icon support */
+.ui-menu-icons {
+	position: relative;
+}
+.ui-menu-icons .ui-menu-item a {
+	position: relative;
+	padding-left: 2em;
+}
+
+/* left-aligned */
+.ui-menu .ui-icon {
+	position: absolute;
+	top: .2em;
+	left: .2em;
+}
+
+/* right-aligned */
+.ui-menu .ui-menu-icon {
+	position: static;
+	float: right;
+}
+.ui-progressbar {
+	height: 2em;
+	text-align: left;
+	overflow: hidden;
+}
+.ui-progressbar .ui-progressbar-value {
+	margin: -1px;
+	height: 100%;
+}
+.ui-progressbar .ui-progressbar-overlay {
+	background: url("images/animated-overlay.gif");
+	height: 100%;
+	filter: alpha(opacity=25);
+	opacity: 0.25;
+}
+.ui-progressbar-indeterminate .ui-progressbar-value {
+	background-image: none;
+}
+.ui-slider {
+	position: relative;
+	text-align: left;
+}
+.ui-slider .ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	width: 1.2em;
+	height: 1.2em;
+	cursor: default;
+}
+.ui-slider .ui-slider-range {
+	position: absolute;
+	z-index: 1;
+	font-size: .7em;
+	display: block;
+	border: 0;
+	background-position: 0 0;
+}
+
+/* For IE8 - See #6727 */
+.ui-slider.ui-state-disabled .ui-slider-handle,
+.ui-slider.ui-state-disabled .ui-slider-range {
+	filter: inherit;
+}
+
+.ui-slider-horizontal {
+	height: .8em;
+}
+.ui-slider-horizontal .ui-slider-handle {
+	top: -.3em;
+	margin-left: -.6em;
+}
+.ui-slider-horizontal .ui-slider-range {
+	top: 0;
+	height: 100%;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+	left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+	right: 0;
+}
+
+.ui-slider-vertical {
+	width: .8em;
+	height: 100px;
+}
+.ui-slider-vertical .ui-slider-handle {
+	left: -.3em;
+	margin-left: 0;
+	margin-bottom: -.6em;
+}
+.ui-slider-vertical .ui-slider-range {
+	left: 0;
+	width: 100%;
+}
+.ui-slider-vertical .ui-slider-range-min {
+	bottom: 0;
+}
+.ui-slider-vertical .ui-slider-range-max {
+	top: 0;
+}
+.ui-spinner {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	padding: 0;
+	vertical-align: middle;
+}
+.ui-spinner-input {
+	border: none;
+	background: none;
+	color: inherit;
+	padding: 0;
+	margin: .2em 0;
+	vertical-align: middle;
+	margin-left: .4em;
+	margin-right: 22px;
+}
+.ui-spinner-button {
+	width: 16px;
+	height: 50%;
+	font-size: .5em;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	position: absolute;
+	cursor: default;
+	display: block;
+	overflow: hidden;
+	right: 0;
+}
+/* more specificity required here to overide default borders */
+.ui-spinner a.ui-spinner-button {
+	border-top: none;
+	border-bottom: none;
+	border-right: none;
+}
+/* vertical centre icon */
+.ui-spinner .ui-icon {
+	position: absolute;
+	margin-top: -8px;
+	top: 50%;
+	left: 0;
+}
+.ui-spinner-up {
+	top: 0;
+}
+.ui-spinner-down {
+	bottom: 0;
+}
+
+/* TR overrides */
+.ui-spinner .ui-icon-triangle-1-s {
+	/* need to fix icons sprite */
+	background-position: -65px -16px;
+}
+.ui-tabs {
+	position: relative;/* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+	padding: .2em;
+}
+.ui-tabs .ui-tabs-nav {
+	margin: 0;
+	padding: .2em .2em 0;
+}
+.ui-tabs .ui-tabs-nav li {
+	list-style: none;
+	float: left;
+	position: relative;
+	top: 0;
+	margin: 1px .2em 0 0;
+	border-bottom-width: 0;
+	padding: 0;
+	white-space: nowrap;
+}
+.ui-tabs .ui-tabs-nav li a {
+	float: left;
+	padding: .5em 1em;
+	text-decoration: none;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+	margin-bottom: -1px;
+	padding-bottom: 1px;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active a,
+.ui-tabs .ui-tabs-nav li.ui-state-disabled a,
+.ui-tabs .ui-tabs-nav li.ui-tabs-loading a {
+	cursor: text;
+}
+.ui-tabs .ui-tabs-nav li a, /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active a {
+	cursor: pointer;
+}
+.ui-tabs .ui-tabs-panel {
+	display: block;
+	border-width: 0;
+	padding: 1em 1.4em;
+	background: none;
+}
+.ui-tooltip {
+	padding: 8px;
+	position: absolute;
+	z-index: 9999;
+	max-width: 300px;
+	-webkit-box-shadow: 0 0 5px #aaa;
+	box-shadow: 0 0 5px #aaa;
+}
+body .ui-tooltip {
+	border-width: 2px;
+}
+
+/* Component containers
+----------------------------------*/
+.ui-widget {
+	font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;
+	font-size: 1.1em;
+}
+.ui-widget .ui-widget {
+	font-size: 1em;
+}
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+	font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;
+	font-size: 1em;
+}
+.ui-widget-content {
+	border: 1px solid #dddddd;
+	background: #eeeeee url(../images/jquery-ui/ui-bg_highlight-soft_100_eeeeee_1x100.png) 50% top repeat-x;
+	color: #333333;
+}
+.ui-widget-content a {
+	color: #333333;
+}
+.ui-widget-header {
+	border: 1px solid #e78f08;
+	/*background: #f6a828 url(../images/jquery-ui/ui-bg_gloss-wave_35_f6a828_500x100.png) 50% 50% repeat-x;*/
+	background-color:#477471;
+	color: #ffffff;
+	font-weight: bold;
+}
+.ui-widget-header a {
+	color: #ffffff;
+}
+
+/* Interaction states
+----------------------------------*/
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+	border: 1px solid #cccccc;
+	background: #f6f6f6 url(../images/jquery-ui/ui-bg_glass_100_f6f6f6_1x400.png) 50% 50% repeat-x;
+	font-weight: bold;
+	color: #1c94c4;
+}
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited {
+	color: #1c94c4;
+	text-decoration: none;
+}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+	border: 1px solid #fbcb09;
+	background: #fdf5ce url(../images/jquery-ui/ui-bg_glass_100_fdf5ce_1x400.png) 50% 50% repeat-x;
+	font-weight: bold;
+	color: #c77405;
+}
+.ui-state-hover a,
+.ui-state-hover a:hover,
+.ui-state-hover a:link,
+.ui-state-hover a:visited {
+	color: #c77405;
+	text-decoration: none;
+}
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+	border: 1px solid #fbd850;
+	background: #ffffff url(../images/jquery-ui/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x;
+	font-weight: bold;
+	color: #eb8f00;
+}
+.ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited {
+	color: #eb8f00;
+	text-decoration: none;
+}
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+	border: 1px solid #fed22f;
+	background: #ffe45c url(../images/jquery-ui/ui-bg_highlight-soft_75_ffe45c_1x100.png) 50% top repeat-x;
+	color: #363636;
+}
+.ui-state-highlight a,
+.ui-widget-content .ui-state-highlight a,
+.ui-widget-header .ui-state-highlight a {
+	color: #363636;
+}
+.ui-state-error,
+.ui-widget-content .ui-state-error,
+.ui-widget-header .ui-state-error {
+	border: 1px solid #cd0a0a;
+	background: #b81900 url(../images/jquery-ui/ui-bg_diagonals-thick_18_b81900_40x40.png) 50% 50% repeat;
+	color: #ffffff;
+}
+.ui-state-error a,
+.ui-widget-content .ui-state-error a,
+.ui-widget-header .ui-state-error a {
+	color: #ffffff;
+}
+.ui-state-error-text,
+.ui-widget-content .ui-state-error-text,
+.ui-widget-header .ui-state-error-text {
+	color: #ffffff;
+}
+.ui-priority-primary,
+.ui-widget-content .ui-priority-primary,
+.ui-widget-header .ui-priority-primary {
+	font-weight: bold;
+}
+.ui-priority-secondary,
+.ui-widget-content .ui-priority-secondary,
+.ui-widget-header .ui-priority-secondary {
+	opacity: .7;
+	filter:Alpha(Opacity=70);
+	font-weight: normal;
+}
+.ui-state-disabled,
+.ui-widget-content .ui-state-disabled,
+.ui-widget-header .ui-state-disabled {
+	opacity: .35;
+	filter:Alpha(Opacity=35);
+	background-image: none;
+}
+.ui-state-disabled .ui-icon {
+	filter:Alpha(Opacity=35); /* For IE8 - See #6059 */
+}
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon {
+	width: 16px;
+	height: 16px;
+}
+.ui-icon,
+.ui-widget-content .ui-icon {
+	background-image: url(../images/jquery-ui/ui-icons_222222_256x240.png);
+}
+.ui-widget-header .ui-icon {
+	background-image: url(../images/jquery-ui/ui-icons_ffffff_256x240.png);
+}
+.ui-state-default .ui-icon {
+	background-image: url(../images/jquery-ui/ui-icons_ef8c08_256x240.png);
+}
+.ui-state-hover .ui-icon,
+.ui-state-focus .ui-icon {
+	background-image: url(../images/jquery-ui/ui-icons_ef8c08_256x240.png);
+}
+.ui-state-active .ui-icon {
+	background-image: url(../images/jquery-ui/ui-icons_ef8c08_256x240.png);
+}
+.ui-state-highlight .ui-icon {
+	background-image: url(../images/jquery-ui/ui-icons_228ef1_256x240.png);
+}
+.ui-state-error .ui-icon,
+.ui-state-error-text .ui-icon {
+	background-image: url(../images/jquery-ui/ui-icons_ffd27a_256x240.png);
+}
+
+/* positioning */
+.ui-icon-blank { background-position: 16px 16px; }
+.ui-icon-carat-1-n { background-position: 0 0; }
+.ui-icon-carat-1-ne { background-position: -16px 0; }
+.ui-icon-carat-1-e { background-position: -32px 0; }
+.ui-icon-carat-1-se { background-position: -48px 0; }
+.ui-icon-carat-1-s { background-position: -64px 0; }
+.ui-icon-carat-1-sw { background-position: -80px 0; }
+.ui-icon-carat-1-w { background-position: -96px 0; }
+.ui-icon-carat-1-nw { background-position: -112px 0; }
+.ui-icon-carat-2-n-s { background-position: -128px 0; }
+.ui-icon-carat-2-e-w { background-position: -144px 0; }
+.ui-icon-triangle-1-n { background-position: 0 -16px; }
+.ui-icon-triangle-1-ne { background-position: -16px -16px; }
+.ui-icon-triangle-1-e { background-position: -32px -16px; }
+.ui-icon-triangle-1-se { background-position: -48px -16px; }
+.ui-icon-triangle-1-s { background-position: -64px -16px; }
+.ui-icon-triangle-1-sw { background-position: -80px -16px; }
+.ui-icon-triangle-1-w { background-position: -96px -16px; }
+.ui-icon-triangle-1-nw { background-position: -112px -16px; }
+.ui-icon-triangle-2-n-s { background-position: -128px -16px; }
+.ui-icon-triangle-2-e-w { background-position: -144px -16px; }
+.ui-icon-arrow-1-n { background-position: 0 -32px; }
+.ui-icon-arrow-1-ne { background-position: -16px -32px; }
+.ui-icon-arrow-1-e { background-position: -32px -32px; }
+.ui-icon-arrow-1-se { background-position: -48px -32px; }
+.ui-icon-arrow-1-s { background-position: -64px -32px; }
+.ui-icon-arrow-1-sw { background-position: -80px -32px; }
+.ui-icon-arrow-1-w { background-position: -96px -32px; }
+.ui-icon-arrow-1-nw { background-position: -112px -32px; }
+.ui-icon-arrow-2-n-s { background-position: -128px -32px; }
+.ui-icon-arrow-2-ne-sw { background-position: -144px -32px; }
+.ui-icon-arrow-2-e-w { background-position: -160px -32px; }
+.ui-icon-arrow-2-se-nw { background-position: -176px -32px; }
+.ui-icon-arrowstop-1-n { background-position: -192px -32px; }
+.ui-icon-arrowstop-1-e { background-position: -208px -32px; }
+.ui-icon-arrowstop-1-s { background-position: -224px -32px; }
+.ui-icon-arrowstop-1-w { background-position: -240px -32px; }
+.ui-icon-arrowthick-1-n { background-position: 0 -48px; }
+.ui-icon-arrowthick-1-ne { background-position: -16px -48px; }
+.ui-icon-arrowthick-1-e { background-position: -32px -48px; }
+.ui-icon-arrowthick-1-se { background-position: -48px -48px; }
+.ui-icon-arrowthick-1-s { background-position: -64px -48px; }
+.ui-icon-arrowthick-1-sw { background-position: -80px -48px; }
+.ui-icon-arrowthick-1-w { background-position: -96px -48px; }
+.ui-icon-arrowthick-1-nw { background-position: -112px -48px; }
+.ui-icon-arrowthick-2-n-s { background-position: -128px -48px; }
+.ui-icon-arrowthick-2-ne-sw { background-position: -144px -48px; }
+.ui-icon-arrowthick-2-e-w { background-position: -160px -48px; }
+.ui-icon-arrowthick-2-se-nw { background-position: -176px -48px; }
+.ui-icon-arrowthickstop-1-n { background-position: -192px -48px; }
+.ui-icon-arrowthickstop-1-e { background-position: -208px -48px; }
+.ui-icon-arrowthickstop-1-s { background-position: -224px -48px; }
+.ui-icon-arrowthickstop-1-w { background-position: -240px -48px; }
+.ui-icon-arrowreturnthick-1-w { background-position: 0 -64px; }
+.ui-icon-arrowreturnthick-1-n { background-position: -16px -64px; }
+.ui-icon-arrowreturnthick-1-e { background-position: -32px -64px; }
+.ui-icon-arrowreturnthick-1-s { background-position: -48px -64px; }
+.ui-icon-arrowreturn-1-w { background-position: -64px -64px; }
+.ui-icon-arrowreturn-1-n { background-position: -80px -64px; }
+.ui-icon-arrowreturn-1-e { background-position: -96px -64px; }
+.ui-icon-arrowreturn-1-s { background-position: -112px -64px; }
+.ui-icon-arrowrefresh-1-w { background-position: -128px -64px; }
+.ui-icon-arrowrefresh-1-n { background-position: -144px -64px; }
+.ui-icon-arrowrefresh-1-e { background-position: -160px -64px; }
+.ui-icon-arrowrefresh-1-s { background-position: -176px -64px; }
+.ui-icon-arrow-4 { background-position: 0 -80px; }
+.ui-icon-arrow-4-diag { background-position: -16px -80px; }
+.ui-icon-extlink { background-position: -32px -80px; }
+.ui-icon-newwin { background-position: -48px -80px; }
+.ui-icon-refresh { background-position: -64px -80px; }
+.ui-icon-shuffle { background-position: -80px -80px; }
+.ui-icon-transfer-e-w { background-position: -96px -80px; }
+.ui-icon-transferthick-e-w { background-position: -112px -80px; }
+.ui-icon-folder-collapsed { background-position: 0 -96px; }
+.ui-icon-folder-open { background-position: -16px -96px; }
+.ui-icon-document { background-position: -32px -96px; }
+.ui-icon-document-b { background-position: -48px -96px; }
+.ui-icon-note { background-position: -64px -96px; }
+.ui-icon-mail-closed { background-position: -80px -96px; }
+.ui-icon-mail-open { background-position: -96px -96px; }
+.ui-icon-suitcase { background-position: -112px -96px; }
+.ui-icon-comment { background-position: -128px -96px; }
+.ui-icon-person { background-position: -144px -96px; }
+.ui-icon-print { background-position: -160px -96px; }
+.ui-icon-trash { background-position: -176px -96px; }
+.ui-icon-locked { background-position: -192px -96px; }
+.ui-icon-unlocked { background-position: -208px -96px; }
+.ui-icon-bookmark { background-position: -224px -96px; }
+.ui-icon-tag { background-position: -240px -96px; }
+.ui-icon-home { background-position: 0 -112px; }
+.ui-icon-flag { background-position: -16px -112px; }
+.ui-icon-calendar { background-position: -32px -112px; }
+.ui-icon-cart { background-position: -48px -112px; }
+.ui-icon-pencil { background-position: -64px -112px; }
+.ui-icon-clock { background-position: -80px -112px; }
+.ui-icon-disk { background-position: -96px -112px; }
+.ui-icon-calculator { background-position: -112px -112px; }
+.ui-icon-zoomin { background-position: -128px -112px; }
+.ui-icon-zoomout { background-position: -144px -112px; }
+.ui-icon-search { background-position: -160px -112px; }
+.ui-icon-wrench { background-position: -176px -112px; }
+.ui-icon-gear { background-position: -192px -112px; }
+.ui-icon-heart { background-position: -208px -112px; }
+.ui-icon-star { background-position: -224px -112px; }
+.ui-icon-link { background-position: -240px -112px; }
+.ui-icon-cancel { background-position: 0 -128px; }
+.ui-icon-plus { background-position: -16px -128px; }
+.ui-icon-plusthick { background-position: -32px -128px; }
+.ui-icon-minus { background-position: -48px -128px; }
+.ui-icon-minusthick { background-position: -64px -128px; }
+.ui-icon-close { background-position: -80px -128px; }
+.ui-icon-closethick { background-position: -96px -128px; }
+.ui-icon-key { background-position: -112px -128px; }
+.ui-icon-lightbulb { background-position: -128px -128px; }
+.ui-icon-scissors { background-position: -144px -128px; }
+.ui-icon-clipboard { background-position: -160px -128px; }
+.ui-icon-copy { background-position: -176px -128px; }
+.ui-icon-contact { background-position: -192px -128px; }
+.ui-icon-image { background-position: -208px -128px; }
+.ui-icon-video { background-position: -224px -128px; }
+.ui-icon-script { background-position: -240px -128px; }
+.ui-icon-alert { background-position: 0 -144px; }
+.ui-icon-info { background-position: -16px -144px; }
+.ui-icon-notice { background-position: -32px -144px; }
+.ui-icon-help { background-position: -48px -144px; }
+.ui-icon-check { background-position: -64px -144px; }
+.ui-icon-bullet { background-position: -80px -144px; }
+.ui-icon-radio-on { background-position: -96px -144px; }
+.ui-icon-radio-off { background-position: -112px -144px; }
+.ui-icon-pin-w { background-position: -128px -144px; }
+.ui-icon-pin-s { background-position: -144px -144px; }
+.ui-icon-play { background-position: 0 -160px; }
+.ui-icon-pause { background-position: -16px -160px; }
+.ui-icon-seek-next { background-position: -32px -160px; }
+.ui-icon-seek-prev { background-position: -48px -160px; }
+.ui-icon-seek-end { background-position: -64px -160px; }
+.ui-icon-seek-start { background-position: -80px -160px; }
+/* ui-icon-seek-first is deprecated, use ui-icon-seek-start instead */
+.ui-icon-seek-first { background-position: -80px -160px; }
+.ui-icon-stop { background-position: -96px -160px; }
+.ui-icon-eject { background-position: -112px -160px; }
+.ui-icon-volume-off { background-position: -128px -160px; }
+.ui-icon-volume-on { background-position: -144px -160px; }
+.ui-icon-power { background-position: 0 -176px; }
+.ui-icon-signal-diag { background-position: -16px -176px; }
+.ui-icon-signal { background-position: -32px -176px; }
+.ui-icon-battery-0 { background-position: -48px -176px; }
+.ui-icon-battery-1 { background-position: -64px -176px; }
+.ui-icon-battery-2 { background-position: -80px -176px; }
+.ui-icon-battery-3 { background-position: -96px -176px; }
+.ui-icon-circle-plus { background-position: 0 -192px; }
+.ui-icon-circle-minus { background-position: -16px -192px; }
+.ui-icon-circle-close { background-position: -32px -192px; }
+.ui-icon-circle-triangle-e { background-position: -48px -192px; }
+.ui-icon-circle-triangle-s { background-position: -64px -192px; }
+.ui-icon-circle-triangle-w { background-position: -80px -192px; }
+.ui-icon-circle-triangle-n { background-position: -96px -192px; }
+.ui-icon-circle-arrow-e { background-position: -112px -192px; }
+.ui-icon-circle-arrow-s { background-position: -128px -192px; }
+.ui-icon-circle-arrow-w { background-position: -144px -192px; }
+.ui-icon-circle-arrow-n { background-position: -160px -192px; }
+.ui-icon-circle-zoomin { background-position: -176px -192px; }
+.ui-icon-circle-zoomout { background-position: -192px -192px; }
+.ui-icon-circle-check { background-position: -208px -192px; }
+.ui-icon-circlesmall-plus { background-position: 0 -208px; }
+.ui-icon-circlesmall-minus { background-position: -16px -208px; }
+.ui-icon-circlesmall-close { background-position: -32px -208px; }
+.ui-icon-squaresmall-plus { background-position: -48px -208px; }
+.ui-icon-squaresmall-minus { background-position: -64px -208px; }
+.ui-icon-squaresmall-close { background-position: -80px -208px; }
+.ui-icon-grip-dotted-vertical { background-position: 0 -224px; }
+.ui-icon-grip-dotted-horizontal { background-position: -16px -224px; }
+.ui-icon-grip-solid-vertical { background-position: -32px -224px; }
+.ui-icon-grip-solid-horizontal { background-position: -48px -224px; }
+.ui-icon-gripsmall-diagonal-se { background-position: -64px -224px; }
+.ui-icon-grip-diagonal-se { background-position: -80px -224px; }
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Corner radius */
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-tl {
+	border-top-left-radius: 4px;
+}
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-right,
+.ui-corner-tr {
+	border-top-right-radius: 4px;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-left,
+.ui-corner-bl {
+	border-bottom-left-radius: 4px;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-right,
+.ui-corner-br {
+	border-bottom-right-radius: 4px;
+}
+
+/* Overlays */
+.ui-widget-overlay {
+	background: #666666 url(../images/jquery-ui/ui-bg_diagonals-thick_20_666666_40x40.png) 50% 50% repeat;
+	opacity: .5;
+	filter: Alpha(Opacity=50);
+}
+.ui-widget-shadow {
+	margin: -5px 0 0 -5px;
+	padding: 5px;
+	background: #000000 url(../images/jquery-ui/ui-bg_flat_10_000000_40x100.png) 50% 50% repeat-x;
+	opacity: .2;
+	filter: Alpha(Opacity=20);
+	border-radius: 5px;
+}

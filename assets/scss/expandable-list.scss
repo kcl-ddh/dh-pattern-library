@@ -1,0 +1,32 @@
+/* Expandable list */
+$border-color: #ccc;
+$section-padding: 10px;
+$list-content-spacing: 24px;
+
+section.expandable-list {
+	border:1px solid $border-color;
+	.list-item {
+		padding: $section-padding;
+		border-bottom:1px solid $border-color;
+	} 
+	.list-item:last-child {
+		border-bottom:0;
+	}
+	.list-content {
+		display:none;
+		padding-left:$list-content-spacing;
+		padding-right:$list-content-spacing;
+		clear:both;
+	}
+	.list-header {
+		clear: both;
+		overflow: auto;
+		h4 {
+			float:left;
+			position: relative;
+			i {
+				width:$list-content-spacing; 
+			}
+		}
+	}
+} 

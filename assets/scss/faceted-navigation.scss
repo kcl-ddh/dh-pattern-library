@@ -1,0 +1,126 @@
+/* Faceted navigation */
+$selected-filter-bg:			#ccc;
+$selected-filter-bg-padding:	5px;
+$selected-filter-border-radius:	4px;
+$facet-box-spacing:				20px;
+$facet-group-border-color:		#ccc;
+
+
+/* Expandable boxes */
+section[data-expandable-group-member] {
+	border:0;
+	.list-item {
+		margin-bottom: $facet-box-spacing;
+		overflow:auto;
+		border:1px solid $facet-group-border-color;
+		ul {
+			margin-left:0;
+			margin-bottom:0;
+			list-style-type:none;
+		}
+		.ctrl.select.active {
+			font-weight:700;
+		}
+	}
+	.list-item:last-child {
+		border-bottom:1px solid $facet-group-border-color;
+	}
+}
+
+
+
+/* In-page refresh */
+.updating {
+	margin:0 40%;
+	color:#fff;
+	position:relative;
+	top:10px;
+	z-index:40000;
+	.spinner {
+		position: absolute;
+		top:0;
+	}
+}
+.spinner {
+	display:none;
+}
+.spinner-active {
+	display:inline-block;
+}
+
+
+/* Filters */
+.show-filters {
+	
+	dd.no-filters-message {
+		clear:both;
+		float:none;
+		padding:0;
+		background-color:#fff;
+	}
+	
+	dt.filters-header {
+		background-color:#fff;
+		padding:0 !important;
+		display:block; 
+		clear:both; 
+	}
+	dt.filters-header:after {
+		clear:both;
+		display:block;
+		content: " ";
+	}
+}
+
+.selected-filter {	
+	
+	float:left;
+	dt,dd {
+		float:left;
+		background-color: $selected-filter-bg;
+		padding:$selected-filter-bg-padding;
+		
+	}
+	dt.filter.first{
+		clear:both;
+	}
+	dt.filter:first-child {
+		clear:both !important;
+	}
+	dt {
+		border-top-left-radius:$selected-filter-border-radius;
+		border-bottom-left-radius:$selected-filter-border-radius;
+		
+	}
+	dd { 
+		margin-right:10px;
+		border-top-right-radius:$selected-filter-border-radius;
+		border-bottom-right-radius:$selected-filter-border-radius;
+		
+	}
+}
+
+.selected-filter:after {
+	display:block;
+	content: " ";
+	clear:both;
+}
+
+
+.show-filters:after {
+	display:block;
+	content: " ";
+	clear:both;
+}
+
+/* slider */
+.slider-label {
+	font-size:12px;
+	margin-top:5px;
+}
+.slider-lower-limit {
+	float:left;
+}
+.slider-upper-limit {
+	float:right;
+}
