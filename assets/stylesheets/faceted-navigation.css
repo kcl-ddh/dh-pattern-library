@@ -1,0 +1,134 @@
+/* Faceted navigation */
+/* Expandable boxes */
+/* line 10, ../scss/faceted-navigation.scss */
+section[data-expandable-group-member] {
+  border: 0;
+}
+/* line 12, ../scss/faceted-navigation.scss */
+section[data-expandable-group-member] .list-item {
+  margin-bottom: 20px;
+  overflow: auto;
+  border: 1px solid #cccccc;
+}
+/* line 16, ../scss/faceted-navigation.scss */
+section[data-expandable-group-member] .list-item ul {
+  margin-left: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+/* line 21, ../scss/faceted-navigation.scss */
+section[data-expandable-group-member] .list-item .ctrl.select.active {
+  font-weight: 700;
+}
+/* line 25, ../scss/faceted-navigation.scss */
+section[data-expandable-group-member] .list-item:last-child {
+  border-bottom: 1px solid #cccccc;
+}
+
+/* In-page refresh */
+/* line 33, ../scss/faceted-navigation.scss */
+.updating {
+  margin: 0 40%;
+  color: #fff;
+  position: relative;
+  top: 10px;
+  z-index: 40000;
+}
+/* line 39, ../scss/faceted-navigation.scss */
+.updating .spinner {
+  position: absolute;
+  top: 0;
+}
+
+/* line 44, ../scss/faceted-navigation.scss */
+.spinner {
+  display: none;
+}
+
+/* line 47, ../scss/faceted-navigation.scss */
+.spinner-active {
+  display: inline-block;
+}
+
+/* Filters */
+/* line 55, ../scss/faceted-navigation.scss */
+.show-filters dd.no-filters-message {
+  clear: both;
+  float: none;
+  padding: 0;
+  background-color: #fff;
+}
+/* line 62, ../scss/faceted-navigation.scss */
+.show-filters dt.filters-header {
+  background-color: #fff;
+  padding: 0 !important;
+  display: block;
+  clear: both;
+}
+/* line 68, ../scss/faceted-navigation.scss */
+.show-filters dt.filters-header:after {
+  clear: both;
+  display: block;
+  content: " ";
+}
+
+/* line 75, ../scss/faceted-navigation.scss */
+.selected-filter {
+  float: left;
+}
+/* line 78, ../scss/faceted-navigation.scss */
+.selected-filter dt, .selected-filter dd {
+  float: left;
+  background-color: #cccccc;
+  padding: 5px;
+}
+/* line 84, ../scss/faceted-navigation.scss */
+.selected-filter dt.filter.first {
+  clear: both;
+}
+/* line 87, ../scss/faceted-navigation.scss */
+.selected-filter dt.filter:first-child {
+  clear: both !important;
+}
+/* line 90, ../scss/faceted-navigation.scss */
+.selected-filter dt {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+/* line 95, ../scss/faceted-navigation.scss */
+.selected-filter dd {
+  margin-right: 10px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+/* line 103, ../scss/faceted-navigation.scss */
+.selected-filter:after {
+  display: block;
+  content: " ";
+  clear: both;
+}
+
+/* line 110, ../scss/faceted-navigation.scss */
+.show-filters:after {
+  display: block;
+  content: " ";
+  clear: both;
+}
+
+/* slider */
+/* line 117, ../scss/faceted-navigation.scss */
+.slider-label {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* line 121, ../scss/faceted-navigation.scss */
+.slider-lower-limit {
+  float: left;
+}
+
+/* line 124, ../scss/faceted-navigation.scss */
+.slider-upper-limit {
+  float: right;
+}

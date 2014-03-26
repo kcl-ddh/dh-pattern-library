@@ -1,0 +1,35 @@
+/* Expandable list */
+/* line 6, ../scss/expandable-list.scss */
+section.expandable-list {
+  border: 1px solid #cccccc;
+}
+/* line 8, ../scss/expandable-list.scss */
+section.expandable-list .list-item {
+  padding: 10px;
+  border-bottom: 1px solid #cccccc;
+}
+/* line 12, ../scss/expandable-list.scss */
+section.expandable-list .list-item:last-child {
+  border-bottom: 0;
+}
+/* line 15, ../scss/expandable-list.scss */
+section.expandable-list .list-content {
+  display: none;
+  padding-left: 24px;
+  padding-right: 24px;
+  clear: both;
+}
+/* line 21, ../scss/expandable-list.scss */
+section.expandable-list .list-header {
+  clear: both;
+  overflow: auto;
+}
+/* line 24, ../scss/expandable-list.scss */
+section.expandable-list .list-header h4 {
+  float: left;
+  position: relative;
+}
+/* line 27, ../scss/expandable-list.scss */
+section.expandable-list .list-header h4 i {
+  width: 24px;
+}
