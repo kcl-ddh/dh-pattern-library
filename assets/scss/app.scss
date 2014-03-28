@@ -36,6 +36,11 @@ header, footer {
     padding: 30px 40px;
 }
 
+.post-meta {
+	color: #666;
+	border-bottom: 1px solid #d8d8d8;
+}
+
 @import "extras","animations";  
 
 /* Expandable lists */

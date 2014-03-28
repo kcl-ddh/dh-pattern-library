@@ -9443,6 +9443,12 @@ header, footer {
   padding: 30px 40px;
 }
 
+/* line 39, ../scss/app.scss */
+.post-meta {
+  color: #666;
+  border-bottom: 1px solid #d8d8d8;
+}
+
 /* Typography */
 /*!
  *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome

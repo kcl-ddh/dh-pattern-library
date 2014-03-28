@@ -19,7 +19,52 @@
         <div class="large-3 small-6 columns hide-for-small-only top-right">
           <ul class="right">
             <li>
-              <a href="#" class="button secondary radius"><i class="fa fa-user">&nbsp;</i> Login</a>
+              <a href="#" data-reveal-id="login-form" data-reveal class="button secondary radius"><i class="fa fa-user">&nbsp;</i> Login</a>
+
+              <div id="login-form" class="reveal-modal" data-reveal>
+                <form>
+                  <div class="row">
+                    <div class="small-8 small-offset-1">
+                      <div class="row">
+                        <div class="small-3 columns">
+                          <label for="username" class="right inline">Username: </label>
+                        </div>
+                        <div class="small-9 columns">
+                          <input type="text" id="username" placeholder="Username or Email">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="small-8 small-offset-1">
+                      <div class="row">
+                        <div class="small-3 columns">
+                          <label for="pwd" class="right inline">Password: </label>
+                        </div>
+                        <div class="small-9 columns">
+                          <input type="password" id="pwd" placeholder="Password">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="small-8 small-offset-1">
+                      <a href="#" class="button radius right">Login</a>
+                    </div>
+                  </div>
+                </form>
+                <hr>
+                  <div class="row">
+                    <div class="small-8 small-offset-2">
+                      <p>Don't have an account? <a href="#">Create one</a></p>
+                      <p><a href="#">Forgot password?</a></p>
+                    </div>
+                  </div>
+
+              <a class="close-reveal-modal">&#215;</a>
+
+              </div>
+
             </li>
             <li>
               <div class="row collapse search-box">
@@ -33,9 +78,58 @@
             </li>
           </ul>
         </div>
+
         <div class="small-6 columns show-for-small-only">
-          <p><a href="#">LOGIN</a></p>
-          <p><a href="#" data-dropdown="drop-search-small"><i class="fa fa-search">&nbsp;</i></a></p>
+          <!-- Shows on small screens only -->
+
+              <a href="#" data-reveal-id="login-form" data-reveal class="button secondary radius right"><i class="fa fa-user">&nbsp;</i> Login</a>
+
+              <div id="login-form" class="reveal-modal" data-reveal>
+                <form>
+                  <div class="row">
+                    <div class="small-8 small-offset-1">
+                      <div class="row">
+                        <div class="small-3 columns">
+                          <label for="username" class="right inline">Username: </label>
+                        </div>
+                        <div class="small-9 columns">
+                          <input type="text" id="username" placeholder="Username or Email">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="small-8 small-offset-1">
+                      <div class="row">
+                        <div class="small-3 columns">
+                          <label for="pwd" class="right inline">Password: </label>
+                        </div>
+                        <div class="small-9 columns">
+                          <input type="password" id="pwd" placeholder="Password">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="small-8 small-offset-1">
+                      <a href="#" class="button radius right">Login</a>
+                    </div>
+                  </div>
+                </form>
+                <hr>
+                  <div class="row">
+                    <div class="small-8 small-offset-2">
+                      <p>Don't have an account? <a href="#">Create one</a></p>
+                      <p><a href="#">Forgot password?</a></p>
+                    </div>
+                  </div>
+
+                <a class="close-reveal-modal">&#215;</a>
+
+              </div>
+
+          <a href="#" data-dropdown="drop-search-small" class="button radius right"><i class="fa fa-search">&nbsp;</i></a>
+          
           <div id="drop-search-small" data-dropdown-content class="f-dropdown content">
             <li class="has-form">
               <div class="row collapse search-box">
@@ -67,9 +161,8 @@
           <ul class="left">
             <li><a href="../index.html">Home</a></li>
             <li class="active"><a href="#">Inner page</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="faceted-browsing.html">Faceted browsing</a></li>
-            <li><a href="#">Search results</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="faceted-browsing-and-search-results.html">Faceted browsing and Search results</a></li>
           </ul>
         </section>
       </nav>
@@ -80,6 +173,11 @@
     <div class="row">
       <div class="large-12 columns">
         <h1>Inner page</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns">
         <h2>Expandable list</h2>
         <section class="expandable-list" data-expandable-group-mmember="group-1" data-section="expandable">
           <div class="list-item">
