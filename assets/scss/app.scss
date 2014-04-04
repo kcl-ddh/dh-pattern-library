@@ -16,6 +16,17 @@ header, footer {
 	margin-bottom: 1em;
 }
 
+table {
+	border: none;
+	width: 100%;
+}
+
+th, th a {
+	text-align: left;
+	color: #fff !important;
+	background: #666;
+}
+
 /* Elements on the page */
 
 .top-right {

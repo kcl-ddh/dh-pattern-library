@@ -9420,30 +9420,43 @@ header, footer {
   margin-bottom: 1em;
 }
 
+/* line 19, ../scss/app.scss */
+table {
+  border: none;
+  width: 100%;
+}
+
+/* line 24, ../scss/app.scss */
+th, th a {
+  text-align: left;
+  color: #fff !important;
+  background: #666;
+}
+
 /* Elements on the page */
-/* line 21, ../scss/app.scss */
+/* line 32, ../scss/app.scss */
 .top-right {
   text-align: right;
 }
 
-/* line 25, ../scss/app.scss */
+/* line 36, ../scss/app.scss */
 .top-right ul {
   list-style: none;
 }
 
-/* line 29, ../scss/app.scss */
+/* line 40, ../scss/app.scss */
 .search-box input, .search-box a.button {
   height: 36px;
   padding-top: 6px;
 }
 
-/* line 34, ../scss/app.scss */
+/* line 45, ../scss/app.scss */
 .orbit-content li div {
   background: #2ba6cb;
   padding: 30px 40px;
 }
 
-/* line 39, ../scss/app.scss */
+/* line 50, ../scss/app.scss */
 .post-meta {
   color: #666;
   border-bottom: 1px solid #d8d8d8;
