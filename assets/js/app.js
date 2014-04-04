@@ -74,9 +74,9 @@ $(document).ready( function() {
 	});
 	// remove all facets
 	$(".filters-header").click( function() {
-		$("dl.selected-filter").remove();
+		$(".selected-filter").remove();
 		updateBrowseResults();
-		$("dd#no-filters").css("display","block");
+		$("#no-filters").css("display","block");
 	});
 	// slider
 	$("#date-slider").slider({

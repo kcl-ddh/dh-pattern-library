@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+
+	<title>Mobile devices iframes</title>
+	
+	<script src="../bower_components/jquery/dist/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script type="text/javascript">
+	
+		$(document).ready( function() {
+			var pageToLoad = "reveal-panel.html"; // enter name of your file here
+			
+			$("iframe").each( function() {
+				$(this).attr("src",pageToLoad);
+			});
+			
+		});
+	
+	
+	</script>
+	
+
+	
+</head>
+<body>
+   
+   <h1>Mobile devices iframes</h1>
+	
+	<p>320 x 480 px</p>
+    <iframe id="phone" src="" class="mobile" height="480" width="320"></iframe>
+    
+	<p>480 x 320 px</p>
+    <iframe src="" class="mobile" height="320" width="480"></iframe>
+    
+	<p>768 x 1024</p>
+    <iframe src="" class="tablet" height="1024" width="768"></iframe>
+	
+	<p>1024 x 768</p>
+    <iframe src="" class="tablet" height="1024" width="768"></iframe>
+    
+	
+
+    
+</body>
+</html>

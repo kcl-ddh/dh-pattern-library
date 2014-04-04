@@ -1,0 +1,268 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inner Page | Pattern Library</title>
+    <link rel="stylesheet" href="../stylesheets/app.css" />
+    <link rel="stylesheet" href="../stylesheets/font/scss/font-awesome.css" />
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+	
+	
+	<style type="text/css">
+	
+	</style>
+	
+	<script type="text/javascript">
+	
+	function contextSlider(link,tourId,featureId) {
+		$('#panel-content').removeClass('show');
+		$("#panel-content").html("");
+    
+		$("#context-panel").css("display","block");
+		$("#context-panel").addClass("slideOut");
+	
+		$(".mod.loading").css("display","block");
+
+	
+		$("#panel-content").load( link, function() {
+	
+		
+			// Hide the spinner
+			$(".mod.loading").css("display","none");
+			// fade in the content
+			$('#panel-content').addClass("show");
+	
+			$(".accordion").fitVids();
+			if (tourId){
+				// Add some more html...
+				$('.section-container.accordion').after(		
+				'<div id="context-panel-navigation" class="contextPanelNav">'+
+				'<p class="backToMap" ><a href="#" onclick="tourPanelContent('+tourId+','+featureId+')">Back</a></p>'+
+				'</div>')	
+			}		
+		});
+	}
+	
+	
+		$(document).ready( function() {
+			
+		});
+	</script>
+	
+	
+	
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header>
+      <div class="row">
+        <div class="large-9 small-6 columns">
+          <h2>Logo</h2>
+        </div>
+        <div class="large-3 small-6 columns hide-for-small-only top-right">
+          <ul class="right">
+            <li>
+              <a href="#" data-reveal-id="login-form" data-reveal class="button secondary radius"><i class="fa fa-user">&nbsp;</i> Login</a>
+
+              <div id="login-form" class="reveal-modal" data-reveal>
+                <form>
+                  <div class="row">
+                    <div class="small-8 small-offset-1">
+                      <div class="row">
+                        <div class="small-3 columns">
+                          <label for="username" class="right inline">Username: </label>
+                        </div>
+                        <div class="small-9 columns">
+                          <input type="text" id="username" placeholder="Username or Email">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="small-8 small-offset-1">
+                      <div class="row">
+                        <div class="small-3 columns">
+                          <label for="pwd" class="right inline">Password: </label>
+                        </div>
+                        <div class="small-9 columns">
+                          <input type="password" id="pwd" placeholder="Password">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="small-8 small-offset-1">
+                      <a href="#" class="button radius right">Login</a>
+                    </div>
+                  </div>
+                </form>
+                <hr>
+                  <div class="row">
+                    <div class="small-8 small-offset-2">
+                      <p>Don't have an account? <a href="#">Create one</a></p>
+                      <p><a href="#">Forgot password?</a></p>
+                    </div>
+                  </div>
+
+              <a class="close-reveal-modal">&#215;</a>
+
+              </div>
+
+            </li>
+            <li>
+              <div class="row collapse search-box">
+                <div class="large-8 small-9 columns">
+                  <input type="text" placeholder="Find stuff">
+                </div>
+                <div class="large-4 small-3 columns">
+                  <a href="#" class="button expand"><i class="fa fa-search">&nbsp;</i></a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="small-6 columns show-for-small-only">
+          <!-- Shows on small screens only -->
+
+              <a href="#" data-reveal-id="login-form" data-reveal class="button secondary radius right"><i class="fa fa-user">&nbsp;</i> Login</a>
+
+              <div id="login-form" class="reveal-modal" data-reveal>
+                <form>
+                  <div class="row">
+                    <div class="small-8 small-offset-1">
+                      <div class="row">
+                        <div class="small-3 columns">
+                          <label for="username" class="right inline">Username: </label>
+                        </div>
+                        <div class="small-9 columns">
+                          <input type="text" id="username" placeholder="Username or Email">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="small-8 small-offset-1">
+                      <div class="row">
+                        <div class="small-3 columns">
+                          <label for="pwd" class="right inline">Password: </label>
+                        </div>
+                        <div class="small-9 columns">
+                          <input type="password" id="pwd" placeholder="Password">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="small-8 small-offset-1">
+                      <a href="#" class="button radius right">Login</a>
+                    </div>
+                  </div>
+                </form>
+                <hr>
+                  <div class="row">
+                    <div class="small-8 small-offset-2">
+                      <p>Don't have an account? <a href="#">Create one</a></p>
+                      <p><a href="#">Forgot password?</a></p>
+                    </div>
+                  </div>
+
+                <a class="close-reveal-modal">&#215;</a>
+
+              </div>
+
+          <a href="#" data-dropdown="drop-search-small" class="button radius right"><i class="fa fa-search">&nbsp;</i></a>
+          
+          <div id="drop-search-small" data-dropdown-content class="f-dropdown content">
+            <li class="has-form">
+              <div class="row collapse search-box">
+                <div class="large-8 small-9 columns">
+                  <input type="text" placeholder="Find stuff">
+                </div>
+                <div class="large-4 small-3 columns">
+                  <a href="#" class="button expand"><i class="fa fa-search">&nbsp;</i></a>
+                </div>
+              </div>
+            </li>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigation -->
+    <div class="contain-to-grid">
+      <nav class="top-bar" data-topbar>
+        <ul class="title-area">
+          <li class="name">
+            <!-- Leave empty or fill with title -->
+          </li>
+          <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+        </ul>
+
+        <section class="top-bar-section">
+          <!-- Left Nav Section -->
+          <ul class="left">
+            <li><a href="../index.html">Home</a></li>
+            <li class="active"><a href="#">Inner page</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="faceted-browsing-and-search-results.html">Faceted browsing and Search results</a></li>
+          </ul>
+        </section>
+      </nav>
+    </div>
+
+    <!-- Main content area -->
+
+    <div class="row">
+      <div class="large-12 columns">
+        <h1>Reveal panel</h1>
+		
+		<p>This pattern is mainly used for mobile-specific sites.</p>
+		
+		
+		<p><a href="ctrl show-reveal-panel">More information</a></p>
+		
+      </div>
+    </div>
+
+    
+  </div>
+
+    <!-- Footer -->
+
+    <footer>
+      <div class="row">
+        <div class="large-12 columns">
+          <h3>This is a footer</h3>
+          <p>King's DDH logo + link to department</p>
+        </div>
+      </div>
+    </footer>
+	
+	
+	<div data-off-screen="reveal-panel" id="context-panel">
+		<div class="close-panel">
+			<a class="ctrl close" id="panel-closer" href="#"><i class="fa fa-angle-left"></i> Close</a>
+		</div>
+		<div class="updating">
+			<img id="loading" class="spinner" src="../images/spinner.svg" alt="Loading">
+		</div>
+		<div class="row panel-content fader" id="panel-content">
+			<div class="small-12 large-12 columns" id="page-content">
+				<div id="info-content">
+					<h1>St Mary on the Hill</h1>
+					<p>The church of St Mary on the Hill is closely associated with the Norman castle situated nearby.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/foundation/js/foundation.min.js"></script>
+    <script src="../js/app.js"></script>
+  </body>
+</html>
