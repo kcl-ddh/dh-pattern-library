@@ -27,6 +27,31 @@ th, th a {
 	background: #666;
 }
 
+ul.archives {
+	margin-left: 0;
+}
+
+.archives li {
+	list-style: none;
+}
+
+/* Magellan sticky to display in column not in row */
+
+.sub-nav dt, .sub-nav dd, .sub-nav li {
+	float: none;
+	display: block;
+}
+
+.placeholder {
+	width: 100%;
+	max-height: 400px;
+	border: 1px solid #ccc;
+	background: #f8f8f8;
+	text-align: center;
+	padding-top: 25%;
+	padding-bottom: 25%;
+	margin: .5em 0 1em;
+}
 /* Elements on the page */
 
 .top-right {

@@ -9433,30 +9433,59 @@ th, th a {
   background: #666;
 }
 
+/* line 30, ../scss/app.scss */
+ul.archives {
+  margin-left: 0;
+}
+
+/* line 34, ../scss/app.scss */
+.archives li {
+  list-style: none;
+}
+
+/* Magellan sticky to display in column not in row */
+/* line 40, ../scss/app.scss */
+.sub-nav dt, .sub-nav dd, .sub-nav li {
+  float: none;
+  display: block;
+}
+
+/* line 45, ../scss/app.scss */
+.placeholder {
+  width: 100%;
+  max-height: 400px;
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+  text-align: center;
+  padding-top: 25%;
+  padding-bottom: 25%;
+  margin: .5em 0 1em;
+}
+
 /* Elements on the page */
-/* line 32, ../scss/app.scss */
+/* line 57, ../scss/app.scss */
 .top-right {
   text-align: right;
 }
 
-/* line 36, ../scss/app.scss */
+/* line 61, ../scss/app.scss */
 .top-right ul {
   list-style: none;
 }
 
-/* line 40, ../scss/app.scss */
+/* line 65, ../scss/app.scss */
 .search-box input, .search-box a.button {
   height: 36px;
   padding-top: 6px;
 }
 
-/* line 45, ../scss/app.scss */
+/* line 70, ../scss/app.scss */
 .orbit-content li div {
   background: #2ba6cb;
   padding: 30px 40px;
 }
 
-/* line 50, ../scss/app.scss */
+/* line 75, ../scss/app.scss */
 .post-meta {
   color: #666;
   border-bottom: 1px solid #d8d8d8;
