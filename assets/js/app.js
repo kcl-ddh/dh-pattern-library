@@ -54,6 +54,30 @@ function updateBrowseResults() {
 	
 }
 
+/* Reveal panel */
+function revealPanel(page) {
+	/*	this assumes the content you are loading in from the external
+		file is in a div/section etc. with id="content-section"
+	*/
+	var page = page + " #content-section > *";
+	$('#panel-content').removeClass('show');
+	$("#panel-content").html("");
+
+	$(".reveal-panel").css("display","block");
+	$(".reveal-panel").addClass("slide-out");
+
+	$(".updating").css("display","block");
+	
+	$("#panel-content").load( page, function() {
+		// Hide the spinner
+		$(".updating").css("display","none");
+		// fade in the content
+		$('#panel-content').addClass("show");
+
+	});
+	return false;	
+}
+
 
 
 
@@ -79,25 +103,35 @@ $(document).ready( function() {
 		$("#no-filters").css("display","block");
 	});
 	// slider
-	$("#date-slider").slider({
-		range: true,
-      	values: [1914,1918],
-      	min: 1914,
-      	max: 1918,
-      	step: 1,
-		slide: function( event, ui ) {
+	if ( $.fn.slider) {
+		$("#date-slider").slider({
+			range: true,
+      		values: [1914,1918],
+      		min: 1914,
+      		max: 1918,
+      		step: 1,
+			slide: function( event, ui ) {
 		        $("#person-date-lower" ).val( ui.values[ 0 ]);
 				lower = ui.values[0];
 				upper = ui.values[1];
 				$("#date-lower").text(lower);
 				$("#date-upper").text(upper);
-		      },
-	    stop: function() {
+		   	},
+	    	stop: function() {
 				 // refresh results if auto-refreshing
 				 updateBrowseResults();
-			 } 
-     	
-    });
+			} 
+    	});
+	}
 	
+	/* Activate reveal panel */
+	$(".ctrl.show-reveal-panel").click( function() {
+		externalPage = $(this).attr("data-reveal-page");
+		revealPanel(externalPage);
+	});
+	$("#panel-closer").click( function() {
+		$(".reveal-panel").removeClass("slide-out");
+		return false;
+	});	
 	
 });

@@ -13,42 +13,7 @@
 	
 	</style>
 	
-	<script type="text/javascript">
 	
-	function contextSlider(link,tourId,featureId) {
-		$('#panel-content').removeClass('show');
-		$("#panel-content").html("");
-    
-		$("#context-panel").css("display","block");
-		$("#context-panel").addClass("slideOut");
-	
-		$(".mod.loading").css("display","block");
-
-	
-		$("#panel-content").load( link, function() {
-	
-		
-			// Hide the spinner
-			$(".mod.loading").css("display","none");
-			// fade in the content
-			$('#panel-content').addClass("show");
-	
-			$(".accordion").fitVids();
-			if (tourId){
-				// Add some more html...
-				$('.section-container.accordion').after(		
-				'<div id="context-panel-navigation" class="contextPanelNav">'+
-				'<p class="backToMap" ><a href="#" onclick="tourPanelContent('+tourId+','+featureId+')">Back</a></p>'+
-				'</div>')	
-			}		
-		});
-	}
-	
-	
-		$(document).ready( function() {
-			
-		});
-	</script>
 	
 	
 	
@@ -222,7 +187,7 @@
 		<p>This pattern is mainly used for mobile-specific sites.</p>
 		
 		
-		<p><a href="ctrl show-reveal-panel">More information</a></p>
+		<p><a href="#" class="ctrl show-reveal-panel" data-reveal-page="dummy-content.html">More information</a></p>
 		
       </div>
     </div>
@@ -242,7 +207,7 @@
     </footer>
 	
 	
-	<div data-off-screen="reveal-panel" id="context-panel">
+	<section data-off-screen="reveal-panel" id="context-panel" class="reveal-panel">
 		<div class="close-panel">
 			<a class="ctrl close" id="panel-closer" href="#"><i class="fa fa-angle-left"></i> Close</a>
 		</div>
@@ -257,12 +222,14 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 	
 	
 
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
     <script src="../bower_components/foundation/js/foundation.min.js"></script>
     <script src="../js/app.js"></script>
+
+	
   </body>
 </html>

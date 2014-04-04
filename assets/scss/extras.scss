@@ -1,3 +1,32 @@
+/* CSS3 effects */
+@mixin gradientOverlay($start,$finish) {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($start), to($finish));
+
+  	/* Safari 5.1, Chrome 10+ */
+  	background: -webkit-linear-gradient(top, $start, $finish);
+
+  	/* Firefox 3.6+ */
+  	background: -moz-linear-gradient(top, $start, $finish);
+
+  	/* IE 10 */
+  	background: -ms-linear-gradient(top, $start, $finish);
+
+  	/* Opera 11.10+ */
+  	background: -o-linear-gradient(top, $start, $finish);
+}
+
+@mixin dropShadow($number) {
+	box-shadow:$number $number $number rgba(0,0,0,0.5);
+}
+
+@mixin borderRadius( $number ) {
+	-moz-border-radius: $number;
+	-webkit-border-radius: $number;
+	border-radius: $number;
+} 
+
+
+
 /* Typography */
 /*!
  *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
